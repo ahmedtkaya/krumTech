@@ -6,22 +6,22 @@ import {
 
 export const contactData = [
   {
-    title: "Excelent Services",
+    title: "Kolay Kullanım",
     icon: BriefcaseIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Teknik bilgiye ihtiyaç duymadan sitenizi yönetin.",
   },
   {
-    title: "Grow Your Market",
+    title: "Esneklik",
     icon: ChartBarIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "İşletmenizin değişen ihtiyaçlarına göre platformu uyarlayın.",
   },
   {
-    title: "Launch Time",
+    title: "Güvenlik",
     icon: PlayIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "ISO sertifikalı altyapımız ile verilerinizin güvende olduğundan emin olun.",
   },
 ];
 

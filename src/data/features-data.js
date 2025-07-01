@@ -1,28 +1,34 @@
 import {
-  ChatBubbleBottomCenterTextIcon,
+  ChatBubbleBottomCenterTextIcon,ComputerDesktopIcon,PhoneIcon, RocketLaunchIcon
 } from "@heroicons/react/24/solid";
 
 export const featuresData = [
   {
     color: "gray",
-    title: "Awarded Agency",
-    icon: ChatBubbleBottomCenterTextIcon,
+    title: "Kapsamlı E-Ticaret Çözümleri",
+    icon: ComputerDesktopIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "İşletmenizin ihtiyaçlarına uygun paket seçenekleri, özelleştirilebilir tasarımlar ve kullanıcı dostu bir yönetim paneli sunuyoruz.",
   },
   {
     color: "gray",
-    title: "Free Revisions",
-    icon: ChatBubbleBottomCenterTextIcon,
+    title: "Yenilikçi Teknoloji",
+    icon: RocketLaunchIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Yapay zeka destekli altyapımızla işletmenizi geleceğe taşıyoruz. SEO araçları, pazarlama otomasyonları, analiz modülleri ve daha fazlasıyla rakiplerinizin bir adım önünde olmanızı sağlıyoruz.",
   },
   {
     color: "gray",
-    title: "Verified Company",
+    title: "7/24 Destek ve Eğitim",
+    icon: PhoneIcon,
+    description:
+      "İhtiyacınız olduğunda yanınızdayız! Teknik destek ekibimiz, eğitim materyallerimiz ve kapsamlı dokümantasyonlarımız ile sorularınıza hızlı çözümler sunuyoruz.",
+  },{
+    color: "gray",
+    title: "Güçlü Referanslar",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "Moda, teknoloji, gıda gibi farklı sektörlerden yüzlerce marka bize güvendi. Onların başarı hikayelerine siz de katılabilirsiniz.",
   },
 ];
 

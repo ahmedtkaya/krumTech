@@ -2,30 +2,29 @@ import { Home, Profile, SignIn, SignUp } from "@/pages";
 
 export const routes = [
   {
-    name: "home",
+    name: "Anasayfa",
     path: "/home",
     element: <Home />,
   },
   {
-    name: "profile",
+    name: "Kurumsal",
     path: "/profile",
     element: <Profile />,
   },
   {
-    name: "Sign In",
+    name: "E-Ihracat",
     path: "/sign-in",
     element: <SignIn />,
   },
   {
-    name: "Sign Up",
+    name: "E-Ticaret Çözümleri",
     path: "/sign-up",
     element: <SignUp />,
   },
   {
-    name: "Docs",
-    href: "https://www.material-tailwind.com/docs/react/installation",
-    target: "_blank",
-    element: "",
+    name: "Dijital Pazarlama",
+    path: "/sign-up",
+    element: <SignUp />,
   },
 ];
 
