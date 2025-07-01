@@ -1,124 +1,142 @@
+import React from "react";
 import {
-  Input,
-  Checkbox,
-  Button,
+  Card,
   Typography,
+  Button,
+  Input,
+  Textarea,
+  Checkbox,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
-
+import { PageTitle, Footer } from "@/widgets/layout";
+import { FeatureCard } from "@/widgets/cards";
+import { featuresData, contactData } from "@/data";
 
 export function SignIn() {
   return (
-    <section className="m-8 flex gap-4">
-      <div className="w-full lg:w-3/5 mt-24">
-        <div className="text-center">
-          <Typography variant="h2" className="font-bold mb-4">Sign In</Typography>
-          <Typography variant="paragraph" color="blue-gray" className="text-lg font-normal">Enter your email and password to Sign In.</Typography>
-        </div>
-        <form className="mt-8 mb-2 mx-auto w-80 max-w-screen-lg lg:w-1/2">
-          <div className="mb-1 flex flex-col gap-6">
-            <Typography variant="small" color="blue-gray" className="-mb-3 font-medium">
-              Your email
-            </Typography>
-            <Input
-              size="lg"
-              placeholder="name@mail.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-            <Typography variant="small" color="blue-gray" className="-mb-3 font-medium">
-              Password
-            </Typography>
-            <Input
-              type="password"
-              size="lg"
-              placeholder="********"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-          </div>
-          <Checkbox
-            label={
-              <Typography
-                variant="small"
-                color="gray"
-                className="flex items-center justify-start font-medium"
-              >
-                I agree the&nbsp;
-                <a
-                  href="#"
-                  className="font-normal text-black transition-colors hover:text-gray-900 underline"
-                >
-                  Terms and Conditions
-                </a>
+    <>
+      {/* Banner Section */}
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
+        <div className="max-w-8xl container relative mx-auto">
+          <div className="flex flex-wrap items-center">
+            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+              <Typography variant="h1" color="white" className="mb-6 font-black">
+                Güçlü Altyapı, Güvenilir Hizmet
               </Typography>
-            }
-            containerProps={{ className: "-ml-2.5" }}
-          />
-          <Button className="mt-6" fullWidth>
-            Sign In
-          </Button>
+              <Typography variant="h2" color="white" className="mb-6 font-black">
+                Krum Technology ile Teknolojinin Gücünü Keşfedin
+              </Typography>
 
-          <div className="flex items-center justify-between gap-2 mt-6">
-            <Checkbox
-              label={
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center justify-start font-medium"
-                >
-                  Subscribe me to newsletter
-                </Typography>
-              }
-              containerProps={{ className: "-ml-2.5" }}
-            />
-            <Typography variant="small" className="font-medium text-gray-900">
-              <a href="#">
-                Forgot Password
-              </a>
-            </Typography>
+              <Typography variant="lead" color="white" className="opacity-80">
+                Krum Technology olarak, teknolojinin sınırlarını zorlayan ve müşterilerimizin ihtiyaçlarını en iyi şekilde karşılamayı hedefleyen yenilikçi çözümler sunuyoruz. Güçlü altyapımız, güvenilir hizmet anlayışımız ve müşteri odaklı yaklaşımımızla, hem yerel hem de global pazarda iş ortaklarımızın yanında yer alıyoruz.
+              </Typography>
+            </div>
           </div>
-          <div className="space-y-4 mt-8">
-            <Button size="lg" color="white" className="flex items-center gap-2 justify-center shadow-md" fullWidth>
-              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clipPath="url(#clip0_1156_824)">
-                  <path d="M16.3442 8.18429C16.3442 7.64047 16.3001 7.09371 16.206 6.55872H8.66016V9.63937H12.9813C12.802 10.6329 12.2258 11.5119 11.3822 12.0704V14.0693H13.9602C15.4741 12.6759 16.3442 10.6182 16.3442 8.18429Z" fill="#4285F4" />
-                  <path d="M8.65974 16.0006C10.8174 16.0006 12.637 15.2922 13.9627 14.0693L11.3847 12.0704C10.6675 12.5584 9.7415 12.8347 8.66268 12.8347C6.5756 12.8347 4.80598 11.4266 4.17104 9.53357H1.51074V11.5942C2.86882 14.2956 5.63494 16.0006 8.65974 16.0006Z" fill="#34A853" />
-                  <path d="M4.16852 9.53356C3.83341 8.53999 3.83341 7.46411 4.16852 6.47054V4.40991H1.51116C0.376489 6.67043 0.376489 9.33367 1.51116 11.5942L4.16852 9.53356Z" fill="#FBBC04" />
-                  <path d="M8.65974 3.16644C9.80029 3.1488 10.9026 3.57798 11.7286 4.36578L14.0127 2.08174C12.5664 0.72367 10.6469 -0.0229773 8.65974 0.000539111C5.63494 0.000539111 2.86882 1.70548 1.51074 4.40987L4.1681 6.4705C4.8001 4.57449 6.57266 3.16644 8.65974 3.16644Z" fill="#EA4335" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1156_824">
-                    <rect width="16" height="16" fill="white" transform="translate(0.5)" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span>Sign in With Google</span>
-            </Button>
-            <Button size="lg" color="white" className="flex items-center gap-2 justify-center shadow-md" fullWidth>
-              <img src="/img/twitter-logo.svg" height={24} width={24} alt="" />
-              <span>Sign in With Twitter</span>
-            </Button>
+        </div>
+      </div>
+
+      {/* 2 adet yazı + resim bloğu */}
+      <section className="bg-gray-100 py-24 px-4">
+        <div className="container mx-auto flex flex-col gap-24">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
+                 Vizyonumuz
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Krum Technology olarak vizyonumuz, dijitalleşen dünyada işletmelerin teknolojik dönüşüm süreçlerine öncülük ederek sürdürülebilir başarıyı mümkün kılmaktır. Amacımız yalnızca günümüz ihtiyaçlarını karşılayan çözümler sunmak değil, aynı zamanda geleceğe yön veren teknolojik altyapılar geliştirerek müşterilerimizin rekabet gücünü artırmaktır.
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Teknolojiyi sadece bir araç olarak değil, iş dünyasını dönüştüren stratejik bir güç olarak görüyoruz. Bu bakış açısıyla hareket ederek, yapay zeka, büyük veri, bulut bilişim ve otomasyon gibi alanlarda inovatif çözümler üretmeye devam ediyoruz
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Vizyonumuz; her ölçekteki işletmeye teknolojiyle değer katmak, onları dijital ekonominin güçlü bir parçası haline getirmek ve ulusal pazardan global pazara uzanan bir başarı hikayesine dönüşmelerine rehberlik etmektir.
+              </Typography>
+
+            </div>
+            <div className="lg:w-1/2">
+              <img src="/img/vision.jpg" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
+            </div>
           </div>
-          <Typography variant="paragraph" className="text-center text-blue-gray-500 font-medium mt-4">
-            Not registered?
-            <Link to="/sign-up" className="text-gray-900 ml-1">Create account</Link>
+        </div>
+      </section>
+
+      <section className="bg-white py-24 px-4">
+        <div className="container mx-auto flex flex-col gap-24">
+          <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
+            <div className="lg:w-1/2">
+              <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
+               Misyonumuz
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Güvenilir altyapı çözümleri ve yenilikçi hizmetler sunarak müşterilerimizin işlerini büyütmelerine yardımcı olmak. Müşteri memnuniyetini en üst seviyede tutarken, global standartlarda sürdürülebilir çözümler sunmayı taahhüt ediyoruz.
+              </Typography>
+            </div>
+            <div className="lg:w-1/2">
+              <img src="/img/misyon.jpg" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Uzmanlık Alanları */}
+      <section className="bg-gray-50 py-24 px-4">
+        <div className="container mx-auto text-center">
+          <Typography variant="h2" className="mb-6 font-bold text-blue-gray-800">
+            Ekibimiz ve Uzmanlık Alanlarımız
           </Typography>
-        </form>
+          <Typography className="mb-12 max-w-3xl mx-auto text-blue-gray-600">
+            Krum Technology, sektördeki en yetenekli profesyonellerden oluşan bir ekibe sahiptir. Ekibimizin önceliği, işletmenizin ihtiyaçlarını anlamak ve en uygun çözümleri sunmaktır.
+          </Typography>
 
-      </div>
-      <div className="w-2/5 h-full hidden lg:block">
-        <img
-          src="/img/pattern.png"
-          className="h-full w-full object-cover rounded-3xl"
-        />
-      </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-6 shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <i className="fas fa-code text-3xl text-blue-600" />
+              </div>
+              <Typography variant="h5" className="font-bold mb-2">
+                Teknik Uzmanlık
+              </Typography>
+              <Typography className="text-blue-gray-600 text-sm">
+                Altyapı mühendisleri, yazılım geliştiriciler ve sistem analistlerinden oluşan uzman kadro.
+              </Typography>
+            </Card>
 
-    </section>
+            <Card className="p-6 shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <i className="fas fa-bullhorn text-3xl text-green-600" />
+              </div>
+              <Typography variant="h5" className="font-bold mb-2">
+                Pazarlama ve Strateji
+              </Typography>
+              <Typography className="text-blue-gray-600 text-sm">
+                Dijital dünyada fark yaratmak için stratejik çözümler sunan deneyimli ekip.
+              </Typography>
+            </Card>
+
+            <Card className="p-6 shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <i className="fas fa-headset text-3xl text-purple-600" />
+              </div>
+              <Typography variant="h5" className="font-bold mb-2">
+                Müşteri Destek Ekibi
+              </Typography>
+              <Typography className="text-blue-gray-600 text-sm">
+                Sorularınıza anında yanıt veren, çözüm odaklı profesyonellerden oluşan destek ekibi.
+              </Typography>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Kartlar Bölümü */}
+      
+
+      <div className="bg-white">
+        <Footer />
+      </div>
+    </>
   );
 }
 

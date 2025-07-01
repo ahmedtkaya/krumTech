@@ -56,32 +56,62 @@ export function Home() {
     />
   ))}
 </div>
+<div className="mt-32 px-4 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 place-items-center">
 
-          <div className="mt-32 flex flex-wrap items-center">
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-                <FingerPrintIcon className="h-8 w-8 text-white " />
-              </div>
-              <Typography
-                variant="h3"
-                className="mb-3 font-bold"
-                color="blue-gray"
-              >
-                Sunduğumuz Çözümlerle İşinizi Nasıl Büyütüyoruz?
-              </Typography>
-              <Typography className="mb-8 font-normal text-blue-gray-500">
-                SEO ve Pazarlama Araçları: Arama motorlarında üst sıralarda yer almanız için gerekli tüm optimizasyon araçları.
-                <br />
-                Entegrasyon Çözümleri: Ödeme sistemleri, kargo yönetimi ve pazaryeri entegrasyonları ile tüm iş süreçlerinizi kolaylaştırın.
-                <br />
-                E-İhracat Destekleri: Yurt dışına satış yapmak için ihtiyacınız olan dil, para birimi ve lojistik çözümleri.
-                <br/>
-                Mobil Uygulama Desteği: iOS ve Android uyumlu uygulamalarla müşterilerinize her an ulaşabilirsiniz.
-              </Typography>
-              <Button variant="filled">read more</Button>
-            </div>
-           
-          </div>
+  <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+    <img src="/img/seo.jpg" alt="SEO" className="h-60 w-full object-cover" />
+    <div className="p-6">
+      <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
+        SEO ve Pazarlama Araçları
+      </Typography>
+      <Typography className="text-blue-gray-600 text-base">
+        Arama motorlarında üst sıralarda yer almanız için gerekli tüm optimizasyon araçları.
+      </Typography>
+    </div>
+  </div>
+
+  
+  <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+    <img src="/img/entegrasyon.jpg" alt="Entegrasyon" className="h-60 w-full object-cover" />
+    <div className="p-6">
+      <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
+        Entegrasyon Çözümleri
+      </Typography>
+      <Typography className="text-blue-gray-600 text-base">
+        Ödeme sistemleri, kargo yönetimi ve pazaryeri entegrasyonları ile iş süreçlerinizi kolaylaştırın.
+      </Typography>
+    </div>
+  </div>
+
+  
+  <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+    <img src="/img/e-ihracat.jpg" alt="E-İhracat" className="h-60 w-full object-cover" />
+    <div className="p-6">
+      <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
+        E-İhracat Destekleri
+      </Typography>
+      <Typography className="text-blue-gray-600 text-base">
+        Yurt dışına satış için gerekli dil, para birimi ve lojistik çözümlerini sunuyoruz.
+      </Typography>
+    </div>
+  </div>
+
+  
+  <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+    <img src="/img/mobil.jpg" alt="Mobil" className="h-60 w-full object-cover" />
+    <div className="p-6">
+      <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
+        Mobil Uygulama Desteği
+      </Typography>
+      <Typography className="text-blue-gray-600 text-base">
+        iOS ve Android uyumlu uygulamalarla müşterilerinize her an ulaşabilirsiniz.
+      </Typography>
+    </div>
+  </div>
+</div>
+
+
+
         </div>
       </section>
       <section className="relative bg-white py-24 px-4">

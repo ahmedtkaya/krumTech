@@ -1,132 +1,141 @@
-import { Avatar, Typography, Button } from "@material-tailwind/react";
+import React from "react";
 import {
-  MapPinIcon,
-  BriefcaseIcon,
-  BuildingLibraryIcon,
-} from "@heroicons/react/24/solid";
-import { Footer } from "@/widgets/layout";
+  Card,
+  Typography,
+  Button,
+  Input,
+  Textarea,
+  Checkbox,
+} from "@material-tailwind/react";
+import { PageTitle, Footer } from "@/widgets/layout";
+import { FeatureCard } from "@/widgets/cards";
+import { featuresData, contactData } from "@/data";
 
 export function Profile() {
   return (
     <>
-      <section className="relative block h-[50vh]">
-        <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center scale-105" />
+      {/* Banner Section */}
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
-      </section>
-      <section className="relative bg-white py-16">
-        <div className="relative mb-6 -mt-40 flex w-full px-4 min-w-0 flex-col break-words bg-white">
-          <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row justify-between">
-              <div className="relative flex gap-6 items-start">
-                <div className="-mt-20 w-40">
-                  <Avatar
-                    src="/img/team-5.png"
-                    alt="Profile picture"
-                    variant="circular"
-                    className="h-full w-full"
-                  />
-                </div>
-                <div className="flex flex-col mt-2">
-                  <Typography variant="h4" color="blue-gray">
-                    Jenna Stones
-                  </Typography>
-                  <Typography variant="paragraph" color="gray" className="!mt-0 font-normal">jena@mail.com</Typography>
-                </div>
-              </div>
+        <div className="max-w-8xl container relative mx-auto">
+          <div className="flex flex-wrap items-center">
+            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+              <Typography variant="h1" color="white" className="mb-6 font-black">
+                Güçlü Altyapı, Güvenilir Hizmet
+              </Typography>
+              <Typography variant="h2" color="white" className="mb-6 font-black">
+                Krum Technology ile Teknolojinin Gücünü Keşfedin
+              </Typography>
 
-              <div className="mt-10 mb-10 flex lg:flex-col justify-between items-center lg:justify-end lg:mb-0 lg:px-4 flex-wrap lg:-mt-5">
-                <Button className="bg-gray-900 w-fit lg:ml-auto">Conntect</Button>
-                <div className="flex justify-start py-4 pt-8 lg:pt-4">
-                  <div className="mr-4 p-3 text-center">
-                    <Typography
-                      variant="lead"
-                      color="blue-gray"
-                      className="font-bold uppercase"
-                    >
-                      22
-                    </Typography>
-                    <Typography
-                      variant="small"
-                      className="font-normal text-blue-gray-500"
-                    >
-                      Friends
-                    </Typography>
-                  </div>
-                  <div className="mr-4 p-3 text-center">
-                    <Typography
-                      variant="lead"
-                      color="blue-gray"
-                      className="font-bold uppercase"
-                    >
-                      10
-                    </Typography>
-                    <Typography
-                      variant="small"
-                      className="font-normal text-blue-gray-500"
-                    >
-                      Photos
-                    </Typography>
-                  </div>
-                  <div className="p-3 text-center lg:mr-4">
-                    <Typography
-                      variant="lead"
-                      color="blue-gray"
-                      className="font-bold uppercase"
-                    >
-                      89
-                    </Typography>
-                    <Typography
-                      variant="small"
-                      className="font-normal text-blue-gray-500"
-                    >
-                      Comments
-                    </Typography>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div className="-mt-4 container space-y-2">
-              <div className="flex items-center gap-2">
-                <MapPinIcon className="-mt-px h-4 w-4 text-blue-gray-500" />
-                <Typography className="font-medium text-blue-gray-500">
-                  Los Angeles, California
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <BriefcaseIcon className="-mt-px h-4 w-4 text-blue-gray-500" />
-                <Typography className="font-medium text-blue-gray-500">
-                  Solution Manager - Creative Tim Officer
-                </Typography>
-              </div>
-              <div className="flex items-center gap-2">
-                <BuildingLibraryIcon className="-mt-px h-4 w-4 text-blue-gray-500" />
-                <Typography className="font-medium text-blue-gray-500">
-                  University of Computer Science
-                </Typography>
-              </div>
-            </div>
-            <div className="mb-10 py-6">
-              <div className="flex w-full flex-col items-start lg:w-1/2">
-                <Typography className="mb-6 font-normal text-blue-gray-500">
-                  An artist of considerable range, Jenna the name taken by
-                  Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                  performs and records all of his own music, giving it a
-                  warm, intimate feel with a solid groove structure. An
-                  artist of considerable range.
-                </Typography>
-                <Button variant="text">Show more</Button>
-              </div>
+              <Typography variant="lead" color="white" className="opacity-80">
+                Krum Technology olarak, teknolojinin sınırlarını zorlayan ve müşterilerimizin ihtiyaçlarını en iyi şekilde karşılamayı hedefleyen yenilikçi çözümler sunuyoruz. Güçlü altyapımız, güvenilir hizmet anlayışımız ve müşteri odaklı yaklaşımımızla, hem yerel hem de global pazarda iş ortaklarımızın yanında yer alıyoruz.
+              </Typography>
             </div>
           </div>
+        </div>
+      </div>
 
+      {/* 2 adet yazı + resim bloğu */}
+      <section className="bg-gray-100 py-24 px-4">
+        <div className="container mx-auto flex flex-col gap-24">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
+                 Vizyonumuz
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Krum Technology olarak vizyonumuz, dijitalleşen dünyada işletmelerin teknolojik dönüşüm süreçlerine öncülük ederek sürdürülebilir başarıyı mümkün kılmaktır. Amacımız yalnızca günümüz ihtiyaçlarını karşılayan çözümler sunmak değil, aynı zamanda geleceğe yön veren teknolojik altyapılar geliştirerek müşterilerimizin rekabet gücünü artırmaktır.
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Teknolojiyi sadece bir araç olarak değil, iş dünyasını dönüştüren stratejik bir güç olarak görüyoruz. Bu bakış açısıyla hareket ederek, yapay zeka, büyük veri, bulut bilişim ve otomasyon gibi alanlarda inovatif çözümler üretmeye devam ediyoruz
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Vizyonumuz; her ölçekteki işletmeye teknolojiyle değer katmak, onları dijital ekonominin güçlü bir parçası haline getirmek ve ulusal pazardan global pazara uzanan bir başarı hikayesine dönüşmelerine rehberlik etmektir.
+              </Typography>
 
+            </div>
+            <div className="lg:w-1/2">
+              <img src="/img/vision.jpg" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
+            </div>
+          </div>
         </div>
       </section>
+
+      <section className="bg-white py-24 px-4">
+        <div className="container mx-auto flex flex-col gap-24">
+          <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
+            <div className="lg:w-1/2">
+              <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
+               Misyonumuz
+              </Typography>
+              <Typography className="text-blue-gray-600 text-base">
+                Güvenilir altyapı çözümleri ve yenilikçi hizmetler sunarak müşterilerimizin işlerini büyütmelerine yardımcı olmak. Müşteri memnuniyetini en üst seviyede tutarken, global standartlarda sürdürülebilir çözümler sunmayı taahhüt ediyoruz.
+              </Typography>
+            </div>
+            <div className="lg:w-1/2">
+              <img src="/img/misyon.jpg" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Uzmanlık Alanları */}
+      <section className="bg-gray-50 py-24 px-4">
+        <div className="container mx-auto text-center">
+          <Typography variant="h2" className="mb-6 font-bold text-blue-gray-800">
+            Ekibimiz ve Uzmanlık Alanlarımız
+          </Typography>
+          <Typography className="mb-12 max-w-3xl mx-auto text-blue-gray-600">
+            Krum Technology, sektördeki en yetenekli profesyonellerden oluşan bir ekibe sahiptir. Ekibimizin önceliği, işletmenizin ihtiyaçlarını anlamak ve en uygun çözümleri sunmaktır.
+          </Typography>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-6 shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <i className="fas fa-code text-3xl text-blue-600" />
+              </div>
+              <Typography variant="h5" className="font-bold mb-2">
+                Teknik Uzmanlık
+              </Typography>
+              <Typography className="text-blue-gray-600 text-sm">
+                Altyapı mühendisleri, yazılım geliştiriciler ve sistem analistlerinden oluşan uzman kadro.
+              </Typography>
+            </Card>
+
+            <Card className="p-6 shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <i className="fas fa-bullhorn text-3xl text-green-600" />
+              </div>
+              <Typography variant="h5" className="font-bold mb-2">
+                Pazarlama ve Strateji
+              </Typography>
+              <Typography className="text-blue-gray-600 text-sm">
+                Dijital dünyada fark yaratmak için stratejik çözümler sunan deneyimli ekip.
+              </Typography>
+            </Card>
+
+            <Card className="p-6 shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <i className="fas fa-headset text-3xl text-purple-600" />
+              </div>
+              <Typography variant="h5" className="font-bold mb-2">
+                Müşteri Destek Ekibi
+              </Typography>
+              <Typography className="text-blue-gray-600 text-sm">
+                Sorularınıza anında yanıt veren, çözüm odaklı profesyonellerden oluşan destek ekibi.
+              </Typography>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Kartlar Bölümü */}
+      
+
       <div className="bg-white">
         <Footer />
       </div>
-
     </>
   );
 }
