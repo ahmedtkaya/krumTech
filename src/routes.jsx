@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp,ETrade,ECommerceSolve } from "@/pages";
+import { Home, Profile, SignIn, SignUp,ETrade,ECommerceSolve ,Digital} from "@/pages";
 
 export const routes = [
   {
@@ -23,8 +23,8 @@ export const routes = [
   },
   {
     name: "Dijital Pazarlama",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/digital",
+    element: <Digital />,
   },
 ];
 
