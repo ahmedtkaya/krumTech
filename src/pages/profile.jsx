@@ -56,7 +56,7 @@ export function Profile() {
 
             </div>
             <div className="lg:w-1/2">
-              <img src="/img/vision.jpg" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
+              <img src="/img/D.png" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ export function Profile() {
               </Typography>
             </div>
             <div className="lg:w-1/2">
-              <img src="/img/misyon.jpg" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
+              <img src="/img/w.png" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>

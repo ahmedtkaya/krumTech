@@ -15,6 +15,7 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
 
+
 export function Home() {
   return (
     <>
@@ -56,10 +57,11 @@ export function Home() {
     />
   ))}
 </div>
-<div className="mt-32 px-4 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 place-items-center">
 
+  <div className="mt-32 px-4 grid grid-cols-2 gap-x-10 gap-y-12 place-items-center">
+  {/* Kart 1 */}
   <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-    <img src="/img/seo.jpg" alt="SEO" className="h-60 w-full object-cover" />
+    <img src="/img/r.png" alt="SEO" className="h-60 w-full object-cover" />
     <div className="p-6">
       <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
         SEO ve Pazarlama Araçları
@@ -70,9 +72,9 @@ export function Home() {
     </div>
   </div>
 
-  
+  {/* Kart 2 */}
   <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-    <img src="/img/entegrasyon.jpg" alt="Entegrasyon" className="h-60 w-full object-cover" />
+    <img src="/img/e.png" alt="Entegrasyon" className="h-60 w-full object-cover" />
     <div className="p-6">
       <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
         Entegrasyon Çözümleri
@@ -83,9 +85,9 @@ export function Home() {
     </div>
   </div>
 
-  
+  {/* Kart 3 */}
   <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-    <img src="/img/e-ihracat.jpg" alt="E-İhracat" className="h-60 w-full object-cover" />
+    <img src="/img/i.png" alt="E-İhracat" className="h-60 w-full object-cover" />
     <div className="p-6">
       <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
         E-İhracat Destekleri
@@ -96,9 +98,9 @@ export function Home() {
     </div>
   </div>
 
-  
+  {/* Kart 4 */}
   <div className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-    <img src="/img/mobil.jpg" alt="Mobil" className="h-60 w-full object-cover" />
+    <img src="/img/m.png" alt="Mobil" className="h-60 w-full object-cover" />
     <div className="p-6">
       <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
         Mobil Uygulama Desteği
@@ -111,10 +113,10 @@ export function Home() {
 </div>
 
 
-
         </div>
       </section>
-      <section className="relative bg-white py-24 px-4">
+
+      <section  id="iletisim" className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
           <PageTitle section="Sizin için çalışıyoruz">
            Platformumuz, sadece bir e-ticaret aracı değil, aynı zamanda işinizi büyütmek için bir iş ortağıdır. Hedefimiz, her müşterimize kişiselleştirilmiş çözümler sunarak onların büyüme yolculuğuna katkıda bulunmak.
@@ -141,6 +143,7 @@ export function Home() {
               </Card>
             ))}
           </div>
+          
           <PageTitle section="İletişime Geçin" heading="Ücretsiz Demo İçin Hemen Başvurun">
             E-ticaret paketlerimizi keşfetmek için fiyatlarımızı inceleyin.
           </PageTitle>

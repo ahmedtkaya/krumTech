@@ -10,11 +10,12 @@ import {
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard } from "@/widgets/cards";
 import { featuresData, contactData } from "@/data";
+import { Link } from "react-router-dom";
 
 export function ETrade() {
   return (
     <>
-      {/* Banner Section */}
+     
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
@@ -38,56 +39,66 @@ export function ETrade() {
 
   
 
-<section class="bg-gray-100 py-24 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+<section className="relative bg-gray-100 py-24 px-4 overflow-hidden">
+  
+  <div
+    className="absolute inset-0 bg-[url('/img/3d.jpg')] bg-cover bg-center opacity-60"
+    style={{ zIndex: 0 }}
+  ></div>
+
+
+  
+  <div className="relative z-10 max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
       E-İhracat Neden Önemlidir?
     </h2>
+    <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-10 rounded-full"></div>
 
-    
-    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-10 rounded-full"></div>
-
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
-     
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <div class="text-4xl mb-4">🌍</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Global Pazara Açılın</h3>
-        <p class="text-gray-600 text-sm">Dijital kanallarla dünyanın dört bir yanındaki müşterilere erişim sağlayın.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <div class="text-4xl mb-4">🚀</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Marka Bilinirliği</h3>
-        <p class="text-gray-600 text-sm">Online görünürlüğünüzü artırarak daha fazla kullanıcıya ulaşın.</p>
-      </div>
-
-      
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <div class="text-4xl mb-4">💰</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Döviz Geliri</h3>
-        <p class="text-gray-600 text-sm">Yurt dışına satış yaparak gelirlerinizi dövize çevirin.</p>
-      </div>
-
-      
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <div class="text-4xl mb-4">👥</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Müşteri Tabanı</h3>
-        <p class="text-gray-600 text-sm">Yeni müşteri kitlelerine ulaşarak büyümenizi hızlandırın.</p>
-      </div>
-
-      
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-        <div class="text-4xl mb-4">⚔️</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Rekabet Avantajı</h3>
-        <p class="text-gray-600 text-sm">Rakiplerinizden ayrışarak pazarda güçlü bir konum elde edin.</p>
-      </div>
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
+      {[
+        {
+          icon: "🌍",
+          title: "Global Pazara Açılın",
+          desc: "Dijital kanallarla dünyanın dört bir yanındaki müşterilere erişim sağlayın.",
+        },
+        {
+          icon: "🚀",
+          title: "Marka Bilinirliği",
+          desc: "Online görünürlüğünüzü artırarak daha fazla kullanıcıya ulaşın.",
+        },
+        {
+          icon: "💰",
+          title: "Döviz Geliri",
+          desc: "Yurt dışına satış yaparak gelirlerinizi dövize çevirin.",
+        },
+        {
+          icon: "👥",
+          title: "Müşteri Tabanı",
+          desc: "Yeni müşteri kitlelerine ulaşarak büyümenizi hızlandırın.",
+        },
+        {
+          icon: "⚔️",
+          title: "Rekabet Avantajı",
+          desc: "Rakiplerinizden ayrışarak pazarda güçlü bir konum elde edin.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+        >
+          <div className="text-4xl mb-4">{item.icon}</div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+          <p className="text-gray-600 text-sm">{item.desc}</p>
+        </div>
+      ))}
     </div>
   </div>
 </section>
 
+
 <section class="bg-gray-100 py-24 px-4">
   <div class="max-w-7xl mx-auto text-center">
+    
     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
       E-İhracatın Avantajları
     </h2>
@@ -97,28 +108,28 @@ export function ETrade() {
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
      
-      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6">
-        <img src="/img/global.png" alt="Global Erişim" class="w-full h-52 object-contain mb-4 mx-auto" />
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+        <img src="/img/g.png" alt="Global Erişim" class="h-60 w-full object-cover" />
         <h3 class="text-lg font-semibold text-gray-800 mb-2">Global Erişim</h3>
         <p class="text-gray-600 text-sm">Dünyanın dört bir yanındaki müşterilere ürünlerinizi hızla ulaştırabilirsiniz.</p>
       </div>
 
       
-      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6">
-        <img src="/img/cost.jpg" alt="Maliyet Avantajı" class="w-full h-52 object-contain mb-4 mx-auto" />
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+        <img src="/img/c.png" alt="Maliyet Avantajı" class="h-60 w-full object-cover" />
         <h3 class="text-lg font-semibold text-gray-800 mb-2">Maliyet Avantajı</h3>
         <p class="text-gray-600 text-sm">Aracıya gerek kalmadan düşük maliyetle satış yapabilirsiniz.</p>
       </div>
 
-      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6">
-        <img src="/img/7.jpg" alt="24/7 Satış" class="w-full h-52 object-contain mb-4 mx-auto" />
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+        <img src="/img/24.png" alt="24/7 Satış" class="h-60 w-full object-cover" />
         <h3 class="text-lg font-semibold text-gray-800 mb-2">24/7 Satış İmkanı</h3>
         <p class="text-gray-600 text-sm">E-ticaret siteniz her zaman açık, her zaman erişilebilir.</p>
       </div>
 
       
-      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6">
-        <img src="/img/power.jpg" alt="Marka Gücü" class="w-full h-52 object-contain mb-4 mx-auto" />
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
+        <img src="/img/b.png" alt="Marka Gücü" class="h-60 w-full object-cover" />
         <h3 class="text-lg font-semibold text-gray-800 mb-2">Marka Gücü</h3>
         <p class="text-gray-600 text-sm">Uluslararası pazarda markanızı öne çıkarma fırsatı yakalayın.</p>
       </div>
@@ -126,8 +137,10 @@ export function ETrade() {
   </div>
 </section>
 
-<section class="bg-white py-20 px-4">
-  <div class="max-w-3xl mx-auto">
+<section class="relative bg-white py-20 px-4 overflow-hidden">
+  <div class="absolute inset-0 bg-[url('/backgrounds/311.jpg')] bg-cover bg-center opacity-50 z-0"></div>
+
+  <div class="relative z-10 max-w-3xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">
       E-İhracat için Sunduğumuz Çözümler
     </h2>
@@ -284,33 +297,32 @@ export function ETrade() {
   </div>
 </section>
 
-<section class="bg-black py-20 px-4">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
-    
-   
-    <div class="text-white md:w-1/2">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">E-İhracatla İşinizi Globalleştirin</h2>
-      <p class="mb-4 text-gray-300">E-ihracat çözümlerimiz, işletmenizi global bir marka haline getirmek için tasarlanmıştır:</p>
-      <ul class="space-y-2 text-gray-300">
+<section className="bg-black py-20 px-4">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+
+    <div className="text-white md:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">E-İhracatla İşinizi Globalleştirin</h2>
+      <p className="mb-4 text-gray-300">E-ihracat çözümlerimiz, işletmenizi global bir marka haline getirmek için tasarlanmıştır:</p>
+      <ul className="space-y-2 text-gray-300">
         <li>✔ Yurt dışı satışlarınıza hemen başlayın.</li>
         <li>✔ E-ticaret sitenizi global pazarlara uygun hale getirin.</li>
         <li>✔ Dünya çapında müşterilere kolayca ulaşın.</li>
       </ul>
     </div>
 
-    
-    <div class="bg-white p-8 rounded-xl shadow-lg md:w-1/2 text-center">
-      <h3 class="text-xl font-semibold text-gray-800 mb-4">Sizin İçin Hazırız</h3>
-      <p class="text-gray-600 mb-6">
+    <div className="bg-white p-8 rounded-xl shadow-lg md:w-1/2 text-center">
+      <h3 className="text-xl font-semibold text-gray-800 mb-4">Sizin İçin Hazırız</h3>
+      <p className="text-gray-600 mb-6">
         Daha fazla bilgi almak ve ücretsiz demo talep etmek için bizimle iletişime geçin.
       </p>
-      <a href="#iletisim" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition">
+      <a href="/#iletisim" className="inline-block bg-gray-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition">
         Demo Talep Et
       </a>
     </div>
 
   </div>
 </section>
+
 
 
 

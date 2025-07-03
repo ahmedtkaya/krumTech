@@ -65,7 +65,7 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
       
                   </div>
                   <div className="lg:w-1/2">
-                    <img src="/img/mrkt.jpg" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
+                    <img src="/img/dm.png" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
                   </div>
                 </div>
               </div>
@@ -139,13 +139,13 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
               </Typography>
             </div>
             <div className="lg:w-1/2">
-              <img src="/img/hedef.jpg" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
+              <img src="/img/hk.png" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>
       </section>
 
-<section className="bg-white py-20 px-6">
+<section className="bg-gray-50 py-20 px-6">
   <div className="max-w-4xl mx-auto">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
       Neden Krum Technology’yi Tercih Etmelisiniz?
@@ -210,7 +210,11 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
   </div>
 </section>
 
-<section className="bg-white py-16 px-6">
+<section className="bg-gray-50 py-20 px-6">
+    <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+      Veriye Dayalı Pazarlama Stratejileri
+    </h2>
   <div className="max-w-4xl mx-auto space-y-4">
     {[
       {
@@ -370,6 +374,7 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
       </div>
     ))}
   </div>
+  </div>
 </section>
 
 <section className="bg-white py-24 px-6">
@@ -424,11 +429,15 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
       ].map((item, idx) => (
         <div key={idx} className="group [perspective:1000px] w-full h-64">
           <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            {/* Front Side */}
             <div className="absolute inset-0 bg-black text-white rounded-xl shadow-xl flex items-center justify-center px-6 py-4 text-center">
               <h3 className="text-lg md:text-xl font-semibold">{item.title}</h3>
             </div>
-            <div className="absolute inset-0 bg-white text-gray-800 rounded-xl shadow-xl px-6 py-4 text-sm [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto">
-              <p className="whitespace-pre-line">{item.back}</p>
+            {/* Back Side */}
+            <div className="absolute inset-0 bg-white text-gray-800 rounded-xl shadow-xl px-6 py-4 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto max-h-64">
+              <p className="text-base md:text-lg text-center leading-relaxed whitespace-pre-line">
+                {item.back}
+              </p>
             </div>
           </div>
         </div>
