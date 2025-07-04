@@ -5,19 +5,17 @@ import {
   Navbar as MTNavbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export function Navbar({ brandName, routes, action }) {
+export function Navbar({ routes }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 960) setOpenNav(false);
+    });
   }, []);
 
   const navList = (
@@ -28,7 +26,7 @@ export function Navbar({ brandName, routes, action }) {
           as="li"
           variant="small"
           color="inherit"
-          className="capitalize"
+          className="capitalize text-lg"
         >
           {href ? (
             <a
@@ -61,15 +59,19 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-3">
+    <MTNavbar color="transparent" className="p-3 bg-black">
       <div className="container mx-auto flex items-center justify-between text-white">
-        <Link to="/">
-          <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            {brandName}
-          </Typography>
-        </Link>
-        <div className="hidden lg:block">{navList}</div>
         
+        <Link to="/">
+          <img
+            src="/img/kr.png"
+            alt=""
+            className="h-16 w-auto object-contain"
+          />
+        </Link>
+
+        <div className="hidden lg:block">{navList}</div>
+
         <IconButton
           variant="text"
           size="sm"
@@ -84,27 +86,16 @@ export function Navbar({ brandName, routes, action }) {
           )}
         </IconButton>
       </div>
-      
+
+      <MobileNav open={openNav}>
+        <div className="container mx-auto">{navList}</div>
+      </MobileNav>
     </MTNavbar>
   );
 }
 
-Navbar.defaultProps = {
-  brandName: "Krum Technology",
-  action: (
-    <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
-    >
-      
-    </a>
-  ),
-};
-
 Navbar.propTypes = {
-  brandName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  action: PropTypes.node,
 };
 
 Navbar.displayName = "/src/widgets/layout/navbar.jsx";

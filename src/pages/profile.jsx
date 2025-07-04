@@ -15,8 +15,8 @@ export function Profile() {
   return (
     <>
       {/* Banner Section */}
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
+      <div className="relative flex min-h-[90vh] items-center justify-center">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -56,7 +56,7 @@ export function Profile() {
 
             </div>
             <div className="lg:w-1/2">
-              <img src="/img/D.png" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
+              <img src="/img/D.png" alt="E-Ticaret Teknoloji" className="h-[400px] w-full object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -69,12 +69,16 @@ export function Profile() {
               <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
                Misyonumuz
               </Typography>
+              
               <Typography className="text-blue-gray-600 text-base">
-                Güvenilir altyapı çözümleri ve yenilikçi hizmetler sunarak müşterilerimizin işlerini büyütmelerine yardımcı olmak. Müşteri memnuniyetini en üst seviyede tutarken, global standartlarda sürdürülebilir çözümler sunmayı taahhüt ediyoruz.
+               Güvenilir altyapı çözümleri ve yenilikçi hizmetler sunarak müşterilerimizin işlerini büyütmelerine destek olmak temel misyonumuzdur.
+İş süreçlerini daha verimli, hızlı ve sürdürülebilir hale getirecek teknoloji çözümleri geliştirerek, müşterilerimizin rekabet avantajı elde etmesini sağlıyoruz.
+Müşteri memnuniyetini yalnızca bir hedef değil, bir öncelik olarak görüyor; her adımda onların ihtiyaçlarına özel çözümler sunmayı taahhüt ediyoruz.
+Global standartlara uygun, ölçeklenebilir ve sürdürülebilir dijital altyapılar geliştirerek, markaların hem yerel hem de uluslararası pazarda güçlü bir konum edinmelerine katkı sağlıyoruz.
               </Typography>
             </div>
             <div className="lg:w-1/2">
-              <img src="/img/w.png" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
+              <img src="/img/w.png" alt="E-İhracat" className="h-[400px] w-full object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -133,9 +137,7 @@ export function Profile() {
       {/* Kartlar Bölümü */}
       
 
-      <div className="bg-white">
-        <Footer />
-      </div>
+      
     </>
   );
 }

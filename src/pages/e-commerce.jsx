@@ -16,8 +16,8 @@ export function ETrade() {
   return (
     <>
      
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
+      <div className="relative flex min-h-[90vh] items-center justify-center">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -108,34 +108,34 @@ export function ETrade() {
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
      
-      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-        <img src="/img/g.png" alt="Global Erişim" class="h-60 w-full object-cover" />
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Global Erişim</h3>
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white text-center p-6">
+        <img src="/img/g.png" alt="Global Erişim" class="w-60 h-60 object-cover rounded-[10px] shadow-2x1" />
+        <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Global Erişim</h3>
         <p class="text-gray-600 text-sm">Dünyanın dört bir yanındaki müşterilere ürünlerinizi hızla ulaştırabilirsiniz.</p>
       </div>
 
-      
-      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-        <img src="/img/c.png" alt="Maliyet Avantajı" class="h-60 w-full object-cover" />
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Maliyet Avantajı</h3>
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white text-center p-6">
+        <img src="/img/c.png" alt="Maliyet Avantajı" class="w-60 h-60 object-cover rounded-[10px] shadow-2x1" />
+        <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Maliyet Avantajı</h3>
         <p class="text-gray-600 text-sm">Aracıya gerek kalmadan düşük maliyetle satış yapabilirsiniz.</p>
       </div>
 
-      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-        <img src="/img/24.png" alt="24/7 Satış" class="h-60 w-full object-cover" />
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">24/7 Satış İmkanı</h3>
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white text-center p-6">
+        <img src="/img/24.png" alt="24/7 Satış" class="w-60 h-60 object-cover rounded-[10px] shadow-2x1" />
+        <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">24/7 Satış İmkanı</h3>
         <p class="text-gray-600 text-sm">E-ticaret siteniz her zaman açık, her zaman erişilebilir.</p>
       </div>
 
-      
-      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white">
-        <img src="/img/b.png" alt="Marka Gücü" class="h-60 w-full object-cover" />
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Marka Gücü</h3>
+      <div class="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white text-center p-6">
+        <img src="/img/b.png" alt="Marka Gücü" class="w-60 h-60 object-cover rounded-[10px] shadow-2x1" />
+        <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Marka Gücü</h3>
         <p class="text-gray-600 text-sm">Uluslararası pazarda markanızı öne çıkarma fırsatı yakalayın.</p>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <section class="relative bg-white py-20 px-4 overflow-hidden">
   <div class="absolute inset-0 bg-[url('/backgrounds/311.jpg')] bg-cover bg-center opacity-50 z-0"></div>
@@ -315,7 +315,7 @@ export function ETrade() {
       <p className="text-gray-600 mb-6">
         Daha fazla bilgi almak ve ücretsiz demo talep etmek için bizimle iletişime geçin.
       </p>
-      <a href="/#iletisim" className="inline-block bg-gray-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition">
+      <a href="/home#iletisim" className="inline-block bg-gray-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition">
         Demo Talep Et
       </a>
     </div>
@@ -328,9 +328,7 @@ export function ETrade() {
 
       
 
-      <div className="bg-white">
-        <Footer />
-      </div>
+      
     </>
   );
 }

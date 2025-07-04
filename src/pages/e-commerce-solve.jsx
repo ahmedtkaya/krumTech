@@ -92,8 +92,8 @@ export function ECommerceSolve() {
   return (
     <>
       {/* Banner Section */}
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-24">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
+      <div className="relative flex min-h-[90vh] items-center justify-center">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60" />
         <div className="container relative mx-auto">
           <div className="text-center px-4 lg:w-8/12 mx-auto">
@@ -136,7 +136,8 @@ export function ECommerceSolve() {
       {/* Modal */}
       {openModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4 py-10">
-          <div className="bg-white w-full max-w-3xl rounded-3xl shadow-2xl p-10 relative border border-gray-200">
+          <div className="bg-white w-full max-w-3xl max-h-[80vh] overflow-y-auto rounded-3xl shadow-2xl p-10 relative border border-gray-200 text-black">
+
             <button
               onClick={() => setOpenModal(null)}
               className="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition text-2xl"
@@ -152,34 +153,47 @@ export function ECommerceSolve() {
 
       {/* Neden Biz? */}
       <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-black mb-12">
-            Neden Bizim Paketlerimizi Seçmelisiniz?
-          </h2>
-          <div className="space-y-10 border-l-4 border-indigo-600 pl-6">
-            {[
-              ["Esneklik ve Ölçeklenebilirlik", "İşletmenizin büyüme hızına uyum sağlar."],
-              ["Güvenilir Altyapı", "Yüksek güvenlik standartlarıyla veri koruma."],
-              ["Kullanıcı Dostu", "Kod bilmeden kolay kullanım."],
-              ["7/24 Teknik Destek", "Her an yanınızdayız."],
-              ["Kolay Entegrasyon", "Kargo ve ödeme sistemleriyle entegre."],
-            ].map(([title, desc], i) => (
-              <div key={i} className="ml-4">
-                <h3 className="text-xl font-semibold text-black">{title}</h3>
-                <p className="text-black">{desc}</p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-10 text-center text-gray-700 text-lg max-w-2xl mx-auto">
-            SEO, pazaryeri entegrasyonu ve özel çözümlerle her büyüklükteki işletmeye destek oluyoruz.
-          </p>
-        </div>
-      </section>
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-4xl font-bold text-center text-black mb-12">
+      Neden Bizim Paketlerimizi Seçmelisiniz?
+    </h2>
 
-      {/* Footer */}
-      <div className="bg-white">
-        <Footer />
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      
+      <div className="space-y-10 border-l-4 border-indigo-600 pl-6">
+        {[
+          ["Esneklik ve Ölçeklenebilirlik", "İşletmenizin büyüme hızına uyum sağlar."],
+          ["Güvenilir Altyapı", "Yüksek güvenlik standartlarıyla veri koruma."],
+          ["Kullanıcı Dostu", "Kod bilmeden kolay kullanım."],
+        ].map(([title, desc], i) => (
+          <div key={i} className="ml-4">
+            <h3 className="text-xl font-semibold text-black">{title}</h3>
+            <p className="text-black">{desc}</p>
+          </div>
+        ))}
       </div>
+
+     
+      <div className="space-y-10 border-r-4 border-indigo-600 pr-6">
+        {[
+          ["7/24 Teknik Destek", "Her an yanınızdayız."],
+          ["Kolay Entegrasyon", "Kargo ve ödeme sistemleriyle entegre."],
+        ].map(([title, desc], i) => (
+          <div key={i} className="mr-4 text-right">
+            <h3 className="text-xl font-semibold text-black">{title}</h3>
+            <p className="text-black">{desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <p className="mt-10 text-center text-gray-700 text-lg max-w-2xl mx-auto">
+      SEO, pazaryeri entegrasyonu ve özel çözümlerle her büyüklükteki işletmeye destek oluyoruz.
+    </p>
+  </div>
+</section>
+
+      
     </>
   );
 }

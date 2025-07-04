@@ -1,170 +1,90 @@
-import PropTypes from "prop-types";
-import { Typography, IconButton } from "@material-tailwind/react";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+  FaFacebook,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
 
-const year = new Date().getFullYear();
-
-export function Footer({ title, description, socials, menus, copyright }) {
+export function Footer() {
   return (
-    <footer className="relative px-4 pt-8 pb-6">
+    <footer className="bg-gray-900 text-white p-8">
       <div className="container mx-auto">
-        <div className="flex flex-wrap pt-6 text-center lg:text-left">
-          <div className="w-full px-4 lg:w-6/12">
-            <Typography variant="h4" className="mb-4" color="blue-gray">
-              {title}
-            </Typography>
-            <Typography className="font-normal text-blue-gray-500 lg:w-2/5">
-              {description}
-            </Typography>
-            <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
-              {socials.map(({ color, name, path }) => (
-                <a
-                  key={name}
-                  href={path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconButton color="white" className="rounded-full shadow-none bg-transparent">
-                    <Typography color={color}>
-                      <i className={`fa-brands fa-${name}`} />
-                    </Typography>
-                  </IconButton>
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Şirket Bilgileri */}
+          <div className="md:w-1/2">
+            <div className="flex items-center gap-4 mb-4">
+              <img
+                src="/img/kr.png"
+                alt="Krum Technology Logo"
+                className="w-10 h-10 object-contain"
+              />
+              <h2 className="text-2xl font-bold">Krum Technology</h2>
+            </div>
+            <p className="text-gray-300">
+              Türkiye'nin önde gelen teknoloji çözümleri sağlayıcısı olarak,
+              yenilikçi ve güvenilir hizmetlerimizle dijital dönüşümünüzü destekliyoruz.
+            </p>
+          </div>
+
+          {/* Sağ Taraf */}
+          <div className="md:w-1/2 flex flex-col sm:flex-row gap-8">
+            {/* Sosyal Medya */}
+            <div className="sm:w-1/2">
+              <h3 className="font-bold mb-4">SOSYAL MEDYA</h3>
+              <div className="flex gap-4">
+                <a href="#" className="text-gray-300 hover:text-white">
+                  <FaInstagram size={24} />
                 </a>
-              ))}
+                <a href="#" className="text-gray-300 hover:text-white">
+                  <FaLinkedin size={24} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-white">
+                  <FaYoutube size={24} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-white">
+                  <FaFacebook size={24} />
+                </a>
+              </div>
+            </div>
+
+            {/* İletişim */}
+            <div className="sm:w-1/2">
+              <h3 className="font-bold mb-4">İLETİŞİM BİLGİLERİ</h3>
+              <div className="space-y-2 text-gray-300">
+                <div className="flex items-start gap-2">
+                  <FaMapMarkerAlt className="mt-1 flex-shrink-0" />
+                  <p>Çobançeşme, Sanayi Cd. No:34196 No:78, 34197 Bahçelievler/İstanbul</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <FaPhone />
+                  <p>+90 212 233 2323</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <FaEnvelope />
+                  <p>bilgi@krum.com.tr</p>
+                </div>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300"
+                >
+                  <FaMapMarkerAlt />
+                  <p>Yol Tarifi</p>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-24 lg:mt-0">
-            {menus.map(({ name, items }) => (
-              <div key={name}>
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-2 block font-medium uppercase"
-                >
-                  {name}
-                </Typography>
-                <ul className="mt-3">
-                  {items.map((item) => (
-                    <li key={item.name}>
-                      <Typography
-                        as="a"
-                        href={item.path}
-                        target="_blank"
-                        rel="noreferrer"
-                        variant="small"
-                        className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                      >
-                        {item.name}
-                      </Typography>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
         </div>
-        <hr className="my-6 border-gray-300" />
-        <div className="flex flex-wrap items-center justify-center md:justify-between">
-          <div className="mx-auto w-full px-4 text-center">
-            <Typography
-              variant="small"
-              className="font-normal text-blue-gray-500"
-            >
-              {copyright}
-            </Typography>
-          </div>
+
+        {/* Copyright */}
+        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+          <p>
+            Copyright © {new Date().getFullYear()} Krum Technology - Tüm hakları saklıdır.
+          </p>
         </div>
       </div>
     </footer>
   );
 }
-
-Footer.defaultProps = {
-  title: "Krum Technology",
-  description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
-  socials: [
-    {
-      color: "gray",
-      name: "twitter",
-      path: "https://www.twitter.com/creativetim",
-    },
-    {
-      color: "gray",
-      name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
-    },
-    {
-      color: "gray",
-      name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
-    },
-    {
-      color: "black",
-      name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
-    },
-  ],
-  menus: [
-    {
-      name: "useful links",
-      items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
-        {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
-        },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
-      ],
-    },
-    {
-      name: "other resources",
-      items: [
-        {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
-        },
-        {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
-        },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
-      ],
-    },
-  ],
-  copyright: (
-    <>
-      Copyright © {year} by {" "}
-      <a
-        href="https://www.creative-tim.com?ref=mtk"
-        target="_blank"
-        className="text-blue-gray-500 transition-colors hover:text-blue-500"
-      >
-        Krum Technology
-      </a>
-      
-    </>
-  ),
-};
-
-Footer.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  socials: PropTypes.arrayOf(PropTypes.object),
-  menus: PropTypes.arrayOf(PropTypes.object),
-  copyright: PropTypes.node,
-};
-
-Footer.displayName = "/src/widgets/layout/footer.jsx";
-
-export default Footer;

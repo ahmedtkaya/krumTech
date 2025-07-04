@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp,ETrade,ECommerceSolve ,Digital} from "@/pages";
+import { Home, Profile,ETrade,ECommerceSolve ,Digital} from "@/pages";
 
 export const routes = [
   {

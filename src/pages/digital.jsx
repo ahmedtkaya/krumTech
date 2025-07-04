@@ -21,8 +21,8 @@ export function Digital() {
   return (
     <>
       {/* Banner Section */}
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-24">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
+      <div className="relative flex min-h-[90vh] items-center justify-center">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -51,21 +51,18 @@ kitlenizi genişletecek ve satışlarınızı artıracak kapsamlı dijital pazar
                        Dijital Pazarlamanın Gücü
                     </Typography>
                     <Typography className="text-blue-gray-600 text-base">
-                      Dijital pazarlama, markanızı hedef kitlenize en etkili şekilde ulaştıran bir köprüdür.
+                      Dijital pazarlama, markanızı doğru zamanda, doğru yerde ve doğru kitleyle buluşturmanın en akıllı yoludur. Geleneksel pazarlama yöntemlerinden farklı olarak, hedef kitlenizin davranışlarını analiz etmenizi, stratejinizi veriye dayalı olarak şekillendirmenizi ve her adımda ölçülebilir sonuçlar elde etmenizi sağlar.
                     </Typography>
                     <Typography className="text-blue-gray-600 text-base">
-                     Geleneksel
-pazarlama yöntemlerinden farklı olarak, müşteri davranışlarını anlama, veri analitiği kullanma ve
-dönüşüm oranlarını artırma gibi avantajlar sunar.
+                     Sunduğumuz dijital pazarlama çözümleriyle sadece görünür olmakla kalmaz, aynı zamanda potansiyel müşterilerinizin zihninde kalıcı bir iz bırakırsınız. Arama motoru optimizasyonu (SEO), sosyal medya yönetimi, içerik üretimi, e-posta pazarlaması ve performans analizleriyle desteklenen kampanyalarımız sayesinde markanızı büyütür, satışlarınızı artırır ve dijitalde güçlü bir konum elde edersiniz.
                     </Typography>
                     <Typography className="text-blue-gray-600 text-base">
-                      İşletmenizin ihtiyaçlarına göre şekillenen dijital
-pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
+                      İşletmenizin hedeflerine uygun, özel olarak tasarlanmış stratejilerimizle sizi sadece bugünün değil, geleceğin dijital dünyasına da hazır hale getiriyoruz.
                     </Typography>
       
                   </div>
                   <div className="lg:w-1/2">
-                    <img src="/img/dm.png" alt="E-Ticaret Teknoloji" className="rounded-lg shadow-lg w-full" />
+                    <img src="/img/dm.png" alt="E-Ticaret Teknoloji" className="h-[400px] w-full object-cover rounded-lg shadow-lg" />
                   </div>
                 </div>
               </div>
@@ -135,11 +132,15 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
                Hedef Kitlenizi Tanıyın ve Onlara Ulaşın
               </Typography>
               <Typography className="text-blue-gray-600 text-base">
-                Etkili bir dijital pazarlama stratejisi, hedef kitlenizi tanımakla başlar. Müşterilerinizin ihtiyaçlarını, ilgi alanlarını ve davranışlarını analiz ediyoruz. Veri odaklı yaklaşımlarımız sayesinde, doğru mesajı doğru kişilere ulaştırarak dönüşüm oranlarınızı artırıyoruz.
+                Etkili bir dijital pazarlama stratejisi, sadece içerik üretmek ya da reklam yayınlamakla sınırlı değildir. Gerçek başarı, hedef kitlenizi derinlemesine tanımak ve bu bilgiyi stratejik bir avantaja dönüştürmekle başlar. Biz, markanızı dijital dünyada öne çıkarmak için öncelikle müşterilerinizin kim olduğunu, nelere ilgi duyduğunu, hangi platformlarda zaman geçirdiğini ve satın alma alışkanlıklarını detaylı biçimde analiz ediyoruz.
+
+                Veriye dayalı yaklaşımlarımız sayesinde, pazarlama süreçlerini sadece sezgilere değil, güçlü içgörülere dayandırıyoruz. Kullanıcı davranışlarını gerçek zamanlı olarak izliyor, bu verileri anlamlandırıyor ve hedeflemeyi sürekli geliştiriyoruz. Böylece mesajınızı yalnızca geniş kitlelere ulaştırmakla kalmıyor, aynı zamanda yüksek potansiyel taşıyan bireylere en etkili şekilde ulaşıyoruz.
+
+                Gelişmiş segmentasyon teknikleri, kişiselleştirilmiş kampanyalar ve çok kanallı etkileşim stratejileri ile dijital varlığınızı güçlendiriyoruz. Her temas noktasını anlamlı hale getiriyor, müşteri deneyimini iyileştiriyor ve sadakati artırıyoruz.
               </Typography>
             </div>
             <div className="lg:w-1/2">
-              <img src="/img/hk.png" alt="E-İhracat" className="rounded-lg shadow-lg w-full" />
+              <img src="/img/hk.png" alt="E-İhracat" className="h-[400px] w-full object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -377,7 +378,7 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
   </div>
 </section>
 
-<section className="bg-white py-24 px-6">
+<section className="bg-[url('/img/b5.jpg')] bg-cover bg-center py-24 px-6">
   <div className="max-w-7xl mx-auto">
     <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">KRUM E-Com Özellikleri</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -434,7 +435,7 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
               <h3 className="text-lg md:text-xl font-semibold">{item.title}</h3>
             </div>
             {/* Back Side */}
-            <div className="absolute inset-0 bg-white text-gray-800 rounded-xl shadow-xl px-6 py-4 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto max-h-64">
+            <div className="absolute inset-0 bg-gray-50 text-gray-800 rounded-1g shadow-md px-6 py-4 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto max-h-64">
               <p className="text-base md:text-lg text-center leading-relaxed whitespace-pre-line">
                 {item.back}
               </p>
@@ -452,18 +453,6 @@ pazarlama stratejilerimizle, sizi rakiplerinizden bir adım öne taşıyoruz.
 
 
 
-
-
-
-
-
-
-      
-
-
-      <div className="bg-white">
-        <Footer />
-      </div>
     </>
   );
 }
