@@ -10,8 +10,8 @@ function App() {
         <Navbar routes={routes} />
       </div>
 
-      {/* Ana İçerik - Bu kısım büyüyebilir */}
-      <div className="flex-grow pt-16"> {/* Navbar yüksekliği kadar padding ekledik */}
+      
+      <div className="flex-grow pt-16"> 
         <Routes>
           {routes.map(({ path, element }, key) => (
             <Route key={key} path={path} element={element} />

@@ -15,10 +15,14 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
 import { useEffect } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 
 
 
 export function Home() {
+  const form = useRef();
   useEffect(() => {
     const hash = window.location.hash;
   if (hash === "#iletisim") {
@@ -30,6 +34,30 @@ export function Home() {
     }
   }
 }, []);
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_23ss", //   Service ID
+      "template_m117zpo", //  Template ID
+      form.current,
+      "_jpwZQuJ8hdVZqjqT" //  Public Key
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        alert("Mesaj başarıyla gönderildi!");
+      },
+      (error) => {
+        console.log(error.text);
+        alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+      }
+    );
+};
+
+
 
   return (
     <>
@@ -141,7 +169,7 @@ export function Home() {
       Hedefimiz, her müşterimize kişiselleştirilmiş çözümler sunarak onların büyüme yolculuğuna katkıda bulunmak.
     </PageTitle>
 
-    <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto mt-8 mb-20 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
       {contactData.map(({ title, icon, description }) => (
         <Card
           key={title}
@@ -170,30 +198,35 @@ export function Home() {
       E-ticaret paketlerimizi keşfetmek için fiyatlarımızı inceleyin.
     </PageTitle>
 
-    <form className="mx-auto w-full mt-12 lg:w-5/12">
-      <div className="mb-8 flex gap-8">
-        <Input variant="outlined" size="lg" label="İsim Soyisim" />
-        <Input variant="outlined" size="lg" label="Email Adresi" />
-      </div>
+    <form ref={form} onSubmit={sendEmail} className="mx-auto w-full mt-12 lg:w-5/12">
 
-      <Textarea variant="outlined" size="lg" label="Mesaj" rows={8} />
+  <div className="mb-8 flex gap-8">
+    <Input name="name" variant="outlined" size="lg" label="İsim Soyisim" />
+    <Input name="email" variant="outlined" size="lg" label="Email Adresi" />
+  </div>
 
-      <Checkbox
-        label={
-          <Typography variant="small" color="gray" className="flex items-center font-normal">
-            I agree the
-            <a href="#" className="font-medium transition-colors hover:text-gray-900">
-              &nbsp;Terms and Conditions
-            </a>
-          </Typography>
-        }
-        containerProps={{ className: "-ml-2.5" }}
-      />
+  <Input name="title" variant="outlined" size="lg" label="Konu Başlığı" className="mb-6" />
 
-      <Button variant="gradient" size="lg" className="mt-8" fullWidth>
-        Gönder
-      </Button>
-    </form>
+  <Textarea name="message" variant="outlined" size="lg" label="Mesaj" rows={8} />
+
+  <Checkbox
+    label={
+      <Typography variant="small" color="gray" className="flex items-center font-normal">
+        I agree the
+        <a href="#" className="font-medium transition-colors hover:text-gray-900">
+          &nbsp;Terms and Conditions
+        </a>
+      </Typography>
+    }
+    containerProps={{ className: "-ml-2.5" }}
+  />
+
+  <Button type="submit" variant="gradient" size="lg" className="mt-8" fullWidth>
+    Gönder
+  </Button>
+</form>
+
+
   </div>
 </section>
 

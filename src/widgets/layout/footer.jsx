@@ -41,12 +41,7 @@ export function Footer() {
                 <a href="#" className="text-gray-300 hover:text-white">
                   <FaLinkedin size={24} />
                 </a>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <FaYoutube size={24} />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <FaFacebook size={24} />
-                </a>
+                
               </div>
             </div>
 
@@ -56,7 +51,7 @@ export function Footer() {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start gap-2">
                   <FaMapMarkerAlt className="mt-1 flex-shrink-0" />
-                  <p>Çobançeşme, Sanayi Cd. No:34196 No:78, 34197 Bahçelievler/İstanbul</p>
+                  <p>A Registered Agent, Inc.8 The Green STE AKENT COUNTYDover, DE, 19901, United States</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <FaPhone />
@@ -66,13 +61,8 @@ export function Footer() {
                   <FaEnvelope />
                   <p>bilgi@krum.com.tr</p>
                 </div>
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300"
-                >
-                  <FaMapMarkerAlt />
-                  <p>Yol Tarifi</p>
-                </a>
+        
+                
               </div>
             </div>
           </div>
