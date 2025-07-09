@@ -6,7 +6,7 @@
     "feature_desc1": "All the optimization tools you need to rank high in search engines.",
     "feature_title2": "Integration Solutions",
     "feature_desc2": "Simplify business processes with payment, cargo, and marketplace integrations.",
-    "feature_title3": "E-Export Support",
+    "feature_title3": "E-Commerce Support",
     "feature_desc3": "We provide language, currency, and logistics solutions for international sales.",
     "feature_title4": "Mobile App Support",
     "feature_desc4": "Reach your customers anytime with iOS and Android-compatible apps.",
@@ -33,7 +33,7 @@
       "image": "/img/e.png"
     },
     {
-      "title": "E-Export Support",
+      "title": "E-Commerce Support",
       "desc": "We provide language, currency, and logistics solutions for international sales.",
       "image": "/img/i.png"
     },
@@ -109,10 +109,10 @@
   },
 
   "etrade": {
-    "bannerTitle": "Unlock the Gates to the Global Market with E-Export",
-    "bannerSubtitle": "Step into the Global Market with E-Export",
-    "bannerDescription": "The world is experiencing the era of digitalization, which is rapidly eliminating borders. Thanks to e-Export, you can increase your income by making your business accessible globally and without any local differences. With the right strategies and a strong infrastructure, it is now very easy to reach your products from all over the world. Come, we are developing what we can do to globalize.",
-    "whyTitle": "Why Is E-Export Important?",
+    "bannerTitle": "Unlock the Gates to the Global Market with E-Commerce",
+    "bannerSubtitle": "Step into the Global Market with E-Commerce",
+    "bannerDescription": "The world is experiencing the era of digitalization, which is rapidly eliminating borders. Thanks to E-Commerce, you can increase your income by making your business accessible globally and without any local differences. With the right strategies and a strong infrastructure, it is now very easy to reach your products from all over the world. Come, we are developing what we can do to globalize.",
+    "whyTitle": "Why Is E-Commerce Important?",
     "whyCards": [
       { "icon": "🌍", "title": "Expand to the Global Market", "desc": "Reach customers around the world through digital channels." },
       { "icon": "🚀", "title": "Brand Awareness", "desc": "Increase your online visibility and reach more users." },
@@ -120,15 +120,15 @@
       { "icon": "👥", "title": "Customer Base", "desc": "Accelerate your growth by reaching new customer groups." },
       { "icon": "⚔️", "title": "Competitive Advantage", "desc": "Stand out from competitors and gain a strong market position." }
     ],
-    "advantagesTitle": "Advantages of E-Export",
-    "advantagesDescription": "E-export offers unique advantages to businesses. Here are some reasons to choose this business model:",
+    "advantagesTitle": "Advantages of E-Commerce",
+    "advantagesDescription": "E-Commerce offers unique advantages to businesses. Here are some reasons to choose this business model:",
     "advantagesCards": [
       { "title": "Global Reach", "desc": "You can deliver your products all around the world. Thanks to advanced cargo integrations, you can deliver your products quickly." },
       { "title": "Cost Advantage", "desc": "Unlike traditional replacement, sales can be made to vehicle organizations and physical stores with less expansion in the warehouse." },
       { "title": "24/7 Sales Opportunity", "desc": "Your e-commerce site is open 24 hours a day. In this way, you can reach parts in different time zones." },
       { "title": "Brand Power", "desc": "Being present in the international market takes your brand one step further. You can establish a strong bond with different individuals." }
     ],
-    "solutionsTitle": "Our E-Export Solutions",
+    "solutionsTitle": "Our E-Commerce Solutions",
     "solutionsList": [
       {
         "title": "Multi-Language and Currency",
@@ -144,14 +144,14 @@
       },
       {
         "title": "Tax and Customs Management",
-        "desc": "The system automatically handles tax and customs procedures required for e-export. This ensures legal compliance and simplifies operations."
+        "desc": "The system automatically handles tax and customs procedures required for E-Commerce. This ensures legal compliance and simplifies operations."
       },
       {
         "title": "Marketing and SEO Support",
         "desc": "Promote your products and brand in global markets through international SEO, social media integration, and advertising support."
       }
     ],
-    "howToStartTitle": "How to Start E-Export?",
+    "howToStartTitle": "How to Start E-Commerce?",
     "howToStartSteps": [
       { "step": "1", "title": "Set Up Your E-Commerce Site", "desc": "Showcase your products with a user-friendly infrastructure." },
       { "step": "2", "title": "Integrate Global Payment & Logistics", "desc": "Offer a fast and secure shopping experience for your customers." },
@@ -159,16 +159,38 @@
       { "step": "4", "title": "Apply Digital Marketing Strategies", "desc": "Reach global customers with social media, SEO and email campaigns." },
       { "step": "5", "title": "Manage Tax and Legal Processes", "desc": "Comply with customs procedures and international trade rules" }
     ],
-    "productsTitle": "Which Products Are Ideal for E-Export?",
-    "productsSubtitle": "Top product categories in global markets:",
-    "products": [
-      { "icon": "👕", "title": "Textiles & Fashion", "desc": "Turkish textile products attract worldwide attention." },
-      { "icon": "🥦", "title": "Food Products", "desc": "Organic and local products attract global customers." },
-      { "icon": "🎁", "title": "Handicrafts & Gifts", "desc": "Cultural and unique products are attractive to global buyers." },
-      { "icon": "💻", "title": "Technology Products", "desc": "Electronic devices and accessories are in great demand" }
-    ],
-    "bottomTitle": "Globalize Your Business with E-Export",
-    "bottomDesc": "Our e-export solutions are designed to turn your business into a global brand:",
+
+  "productsTitle": "Which Products Are Ideal for E-Commerce?",
+  "productsSubtitle": "Top product categories in global markets:",
+  "products": [
+    {
+      "icon": "👕",
+      "title": "Textiles & Fashion",
+      "desc": "Turkish textile products attract worldwide attention.",
+      "color": "bg-pink-100 text-pink-800"
+    },
+    {
+      "icon": "🥦",
+      "title": "Food Products",
+      "desc": "Organic and local products attract global customers.",
+      "color": "bg-green-100 text-green-800"
+    },
+    {
+      "icon": "🎁",
+      "title": "Handicrafts & Gifts",
+      "desc": "Cultural and unique products are attractive to global buyers.",
+      "color": "bg-yellow-100 text-yellow-800"
+    },
+    {
+      "icon": "💻",
+      "title": "Technology Products",
+      "desc": "Electronic devices and accessories are in great demand.",
+      "color": "bg-blue-100 text-blue-800"
+    }
+  ],
+
+    "bottomTitle": "Globalize Your Business with E-Commerce",
+    "bottomDesc": "Our E-Commerce solutions are designed to turn your business into a global brand:",
     "bottomList": [
       "✔ Start selling abroad immediately.",
       "✔ Adapt your e-commerce site for global markets.",
@@ -288,6 +310,59 @@
     { "title": "12. Learn from Customer Behavior", "summary": "Use past data to refine strategies." }
   ],
 
+  "strategies_title": "Data-Driven Marketing Strategies",
+    "strategies": {
+      "1": {
+        "title": "Own Your Customer Data",
+        "details": "Owning customer data means integrating it into your business processes and creating value from it. Compliance with legal regulations (GDPR, CCPA, etc.) is essential for data security, usage, and processing.\n\nTechnical Approach:\n● Data Collection: Integrate data from CRM, web traffic, social media, and POS systems.\n● Storage: Use a centralized Customer Data Platform (CDP).\n● Security: Apply AES-256 encryption and TLS protocols.\n● Management: Use data stream tools like Apache Kafka to set up real-time data processing systems.\n\nTools:\n● Salesforce, HubSpot, Segment.io\n● Amazon S3, Google Cloud Storage"
+      },
+      "2": {
+        "title": "Infinite Possibilities",
+        "details": "With data diversity and flexible segmentation tools, you can create endless combinations in customer segmentation.\n\nTechnical Approach:\n● Segmentation Data: Age, geographic location, purchase frequency, preferred payment methods.\n● Algorithms: Apply K-Means, DBSCAN, or Hierarchical Clustering algorithms.\n● Data Visualization: Visualize segments using Tableau or Power BI.\n\nExample Application:\n● Offer exclusive discount campaigns by separating new customers from loyal ones.\n● Create industry-based segments in B2B sales processes."
+      },
+      "3": {
+        "title": "Dynamic Updates",
+        "details": "Constantly updating segments allows quick responses to changes in customer behavior.\n\nTechnical Approach:\n● Real-Time Processing: Manage data flow with Apache Spark Streaming or Flink.\n● Dynamic Rules: Automatically update segments based on specific behaviors (e.g., no purchase in the last 30 days).\n● Machine Learning: Use supervised learning models to make predictions.\n\nTools:\n● Snowflake, Google BigQuery\n● Python Scikit-learn library"
+      },
+      "4": {
+        "title": "Increase Trust",
+        "details": "Customer data security is critical to brand trustworthiness.\n\nTechnical Approach:\n● Encryption: AES-256-based data encryption.\n● Access Control: Use role-based access control (RBAC) and multi-factor authentication (MFA).\n● Data Masking: Anonymize sensitive information.\n\nTools:\n● Okta, Azure Active Directory\n● HashiCorp Vault"
+      },
+      "5": {
+        "title": "Make Segments Functional",
+        "details": "Integrate your segments into marketing, sales, and customer service processes.\n\nTechnical Approach:\n● Marketing: Create Google Ads and Meta Ads campaigns specific to segments.\n● Sales: Develop segment-specific sales strategies in CRM software.\n● Integration: Connect different systems with Zapier or Mulesoft.\n\nExample Scenario:\n● Develop a loyalty program for loyal customers and manage it with automated campaigns."
+      },
+      "6": {
+        "title": "Send Personalized Emails to Encourage Purchases",
+        "details": "Personalized emails are an effective way to increase conversion rates.\n\nTechnical Approach:\n● Dynamic Content: Display information like the user's name, last purchase, or location in the email.\n● Segment Integration: Integrate segment data from CRM into the email system.\n● Testing: Use A/B testing to determine the most effective content types.\n\nTools:\n● Mailchimp, Klaviyo\n● Python Email Automation libraries"
+      },
+      "7": {
+        "title": "Target High-Value Customers with Discounts",
+        "details": "Offer exclusive deals to premium customers based on Customer Lifetime Value (CLV).\n\nTechnical Approach:\n● CLV Calculation: Use RFM (Recency, Frequency, Monetary) analysis model.\n● Special Campaigns: Develop a campaign management system integrated with CRM.\n\nExample:\n● Offer free shipping and special promotions to high CLV customers."
+      },
+      "8": {
+        "title": "Use Segments in Your Marketing Automations",
+        "details": "Increase efficiency with segment-based marketing automations.\n\nTechnical Approach:\n● Scheduling: Trigger-based email and SMS deliveries.\n● Automation Engines: Use Zapier, ActiveCampaign to manage segment-specific campaigns."
+      },
+      "9": {
+        "title": "Fast Segmentation",
+        "details": "Optimize data processing times to perform fast segmentation on large data sets.\n\nTechnical Approach:\n● Database Optimization: Use NoSQL (MongoDB) for fast querying of large datasets.\n● Parallel Processing: Speed up data processing with tools like Hadoop or Spark."
+      },
+      "10": {
+        "title": "Engage with the Right Customers",
+        "details": "Ensure that segments target the correct customer groups.\n\nTechnical Approach:\n● Behavior Analysis: Analyze user behavior with Google Analytics.\n● Engagement Strategies: Use chatbots to create personalized messages."
+      },
+      "11": {
+        "title": "Add Custom Attributes",
+        "details": "Improve targeting by adding custom metadata to segments.\n\nTechnical Approach:\n● Custom Fields: Add custom fields to user profiles in CRM.\n● Artificial Intelligence: Develop content recommendations tailored to the needs of the segments."
+      },
+      "12": {
+        "title": "Learn from Customer Behavior",
+        "details": "Learn from historical data to optimize future strategies.\n\nTechnical Approach:\n● Behavioral Analytics: Analyze data with Python Pandas and NumPy.\n● Prediction Models: Develop models to predict purchasing habits."
+      }
+    },
+  
+
   "features": [
     {
       "title": "1. Customer Acquisition Tools",
@@ -327,8 +402,8 @@
   "navbar": {
     "home": "Home",
     "about": "About",
-    "export": "E-Export",
-    "ecommerce": "E-Commerce Solutions",
+    "ecommerce": "E-Commerce",
+    "ecommerceSolve": "E-Commerce Solutions",
     "digital": "Digital Marketing"
   }
  }

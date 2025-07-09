@@ -89,51 +89,42 @@ export function Home() {
   return (
     <>
      
-      <div className="relative flex min-h-[90vh] items-center justify-center">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
-        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
-        <div className="max-w-8xl container relative mx-auto">
-          <div className="flex flex-wrap items-center">
-            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
-              <Typography variant="h1" color="white" className="mb-6 font-black">
-                {t("home.hero_title")}
-              </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
-                {t("home.hero_description")}
-              </Typography>
-            </div>
-          </div>
-        </div>
-      </div>
+     {/* HERO SECTION */}
+<div className="relative h-[90vh] flex items-center justify-center">
+  <div className="absolute inset-0 bg-[url('/img/3.png')] bg-cover bg-center" />
+  <div className="absolute inset-0 bg-black/60" />
+  <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      {t("home.hero_title")}
+    </h1>
+    <p className="text-lg text-white opacity-90">
+      {t("home.hero_description")}
+    </p>
+  </div>
+</div>
 
-      
-      <section className="relative z-10 -mt-[110px] bg-white px-4 pb-20 pt-12">
-  <div className="container mx-auto">
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12 px-4 place-items-center ">
-      {[0, 1, 2, 3].map((index) => {
-        const { title, description, icon } = features[index];
-        const IconComponent = iconMap[icon];
-        return (
-          <div
-            key={index}
-            className="h-[250px] w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white text-center p-6 flex flex-col justify-start items-center"
-          >
-           
-            {IconComponent && (
-              <IconComponent className="h-8 w-8 mb-4 text-black" />
-            )}
-            <Typography variant="h5" className="mb-2 font-bold text-blue-gray-800">
-              {title}
-            </Typography>
-            <Typography className="text-blue-gray-600 text-base">
-              {description}
-            </Typography>
-          </div>
-        );
-      })}
-    </div>
+{/* ÖNE ÇIKAN KARTLAR */}
+<section className="relative z-20 -mt-20 px-6 pb-20">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    {[0, 1, 2, 3].map((index) => {
+      const { title, description, icon } = features[index];
+      const IconComponent = iconMap[icon];
+      return (
+        <div
+          key={index}
+          className="rounded-lg shadow-xl bg-white p-6 text-center flex flex-col items-center"
+        >
+          {IconComponent && (
+            <IconComponent className="w-10 h-10 text-black mb-4" />
+          )}
+          <h3 className="text-lg font-bold text-gray-800 mb-2">{title}</h3>
+          <p className="text-gray-600 text-sm">{description}</p>
+        </div>
+      );
+    })}
   </div>
 </section>
+
 
 <div className="w-full bg-gray-100 py-12">
   <div className="container mx-auto px-4">
@@ -245,11 +236,13 @@ export function Home() {
       />
       <Checkbox
         required
+        
         label={
           <Typography
             variant="small"
             color="gray"
             className="flex items-center font-normal"
+            
           >
             {t("home.form_terms")} &nbsp;
             <a
@@ -259,6 +252,7 @@ export function Home() {
               Terms and Conditions
             </a>
           </Typography>
+          
         }
         containerProps={{ className: "-ml-2.5" }}
       />

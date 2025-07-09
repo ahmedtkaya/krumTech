@@ -46,7 +46,7 @@ export function Navbar({ routes }) {
                 React.createElement(icon, {
                   className: "w-[18px] h-[18px] opacity-75 mr-1",
                 })}
-              {t(name)}
+              {t(`navbar.${name}`)}
             </a>
           ) : (
             <Link
@@ -58,7 +58,7 @@ export function Navbar({ routes }) {
                 React.createElement(icon, {
                   className: "w-[18px] h-[18px] opacity-75 mr-1",
                 })}
-              {t(name)}
+              {t(`navbar.${name}`)}
             </Link>
           )}
         </Typography>
@@ -125,7 +125,7 @@ export function Navbar({ routes }) {
       </div>
 
       <MobileNav open={openNav}>
-        <div className="container mx-auto">{navList}</div>
+        <div className="container mx-auto bg-black">{navList}</div>
       </MobileNav>
     </MTNavbar>
   );

@@ -164,14 +164,37 @@
     { "step": "5", "title": "Vergi ve Yasal Süreçleri Yönetin", "desc": "Gümrük işlemleri ve uluslararası ticaret kurallarına uyum sağlayın." }
   ],
 
+  
   "productsTitle": "Hangi Ürünler E-İhracat İçin İdealdir?",
   "productsSubtitle": "Global pazarda öne çıkan başlıca ürün kategorileri:",
   "products": [
-    { "icon": "👕", "title": "Tekstil ve Moda", "desc": "Türk tekstil ürünleri dünya çapında ilgi görmektedir." },
-    { "icon": "🥦", "title": "Gıda Ürünleri", "desc": "Organik ve yerel ürünler global müşterilerin dikkatini çeker" },
-    { "icon": "🎁", "title": "El Sanatları & Hediyelik", "desc": "Kültürel ve benzersiz ürünler global alıcılar için çekicidir." },
-    { "icon": "💻", "title": "Teknoloji Ürünleri", "desc": "Elektronik cihazlar ve aksesuarlar büyük talep görmektedir." }
+    {
+      "icon": "👕",
+      "title": "Tekstil ve Moda",
+      "desc": "Türk tekstil ürünleri dünya çapında ilgi görmektedir.",
+      "color": "bg-pink-100 text-pink-800"
+    },
+    {
+      "icon": "🥦",
+      "title": "Gıda Ürünleri",
+      "desc": "Organik ve yerel ürünler global müşterilerin dikkatini çeker.",
+      "color": "bg-green-100 text-green-800"
+    },
+    {
+      "icon": "🎁",
+      "title": "El Sanatları & Hediyelik",
+      "desc": "Kültürel ve benzersiz ürünler global alıcılar için çekicidir.",
+      "color": "bg-yellow-100 text-yellow-800"
+    },
+    {
+      "icon": "💻",
+      "title": "Teknoloji Ürünleri",
+      "desc": "Elektronik cihazlar ve aksesuarlar büyük talep görmektedir.",
+      "color": "bg-blue-100 text-blue-800"
+    }
   ],
+
+
 
   "bottomTitle": "E-İhracatla İşinizi Globalleştirin",
   "bottomDesc": "E-ihracat çözümlerimiz, işletmenizi global bir marka haline getirmek için tasarlanmıştır:",
@@ -297,6 +320,60 @@
     { "title": "12. Davranışlardan Öğrenin", "summary": "Geçmiş verilerle stratejileri iyileştirin." }
   ],
 
+  "strategies_title": "Veriye Dayalı Pazarlama Stratejileri",
+    "strategies": {
+      "1": {
+        "title": "Müşteri Verilerinizi Sahiplenin",
+        "details": "Müşteri verilerini sahiplenmek, bu verileri iş süreçlerinize entegre etmek ve onlardan değer yaratmak demektir. Verilerin güvenliği, kullanımı ve işlenmesi için yasal düzenlemelere (GDPR, CCPA vb.) uyum sağlanmalıdır.\n\nTeknik Yaklaşım:\n● Veri Toplama: CRM, web trafiği, sosyal medya ve POS sistemlerinden veri entegrasyonu yapın.\n● Depolama: Merkezi bir müşteri veri platformu (CDP) kullanın.\n● Güvenlik: Verilerinizi şifrelemek için AES-256 ve TLS protokollerini uygulayın.\n● Yönetim: Apache Kafka gibi veri akışı araçlarını kullanarak gerçek zamanlı veri işleme sistemleri kurun.\n\nAraçlar:\n● Salesforce, HubSpot, Segment.io\n● Amazon S3, Google Cloud Storage"
+      },
+      "2": {
+        "title": "Sonsuz Olanaklar",
+        "details": "Veri çeşitliliği ve esnek segmentasyon araçlarıyla müşteri segmentasyonunda sınırsız kombinasyon yaratabilirsiniz.\n\nTeknik Yaklaşım:\n● Segmentasyon Verileri: Yaş, coğrafi konum, satın alma sıklığı, tercih edilen ödeme yöntemleri.\n● Algoritmalar: K-Means, DBSCAN veya Hiyerarşik Kümeleme algoritmalarını uygulayın.\n● Veri Görselleştirme: Tableau veya Power BI ile segmentlerin görselleştirilmesi.\n\nÖrnek Uygulama:\n● Yeni müşterileri, sadık müşterilerden ayırarak özel indirim kampanyaları sunun.\n● B2B satış süreçlerinde sektör bazlı segmentler oluşturun."
+      },
+      "3": {
+        "title": "Dinamik Güncellemeler",
+        "details": "Segmentlerin sürekli olarak güncellenmesi, müşterilerin davranış değişimlerine göre hızlı yanıt vermeyi sağlar.\n\nTeknik Yaklaşım:\n● Gerçek Zamanlı İşleme: Apache Spark Streaming veya Flink ile veri akışını yönetin.\n● Dinamik Kurallar: Segmentler, belirli davranışlara (ör. son 30 günde alışveriş yapmama) göre otomatik güncellensin.\n● Makine Öğrenimi: Supervised Learning (denetimli öğrenme) modelleri ile tahminler yapın.\n\nAraçlar:\n● Snowflake, Google BigQuery\n● Python Scikit-learn kütüphanesi"
+      },
+      "4": {
+        "title": "Güveni Artırın",
+        "details": "Müşteri verilerinin güvenliği, marka güvenilirliği açısından kritik öneme sahiptir.\n\nTeknik Yaklaşım:\n● Şifreleme: AES-256 tabanlı veri şifreleme.\n● Erişim Kontrolü: Role-based access control (RBAC) ve çok faktörlü kimlik doğrulama (MFA).\n● Veri Maskeleme: Hassas bilgilerin anonimleştirilmesi.\n\nAraçlar:\n● Okta, Azure Active Directory\n● HashiCorp Vault"
+      },
+      "5": {
+        "title": "Segmentleri İşlevsel Hale Getirin",
+        "details": "Segmentlerinizi pazarlama, satış ve müşteri hizmetleri süreçlerine entegre edin.\n\nTeknik Yaklaşım:\n● Pazarlama: Segmentlere özel Google Ads ve Meta Ads kampanyaları oluşturun.\n● Satış: CRM yazılımında segmentlere özel satış stratejileri geliştirin.\n● Entegrasyon: Zapier veya Mulesoft ile farklı sistemleri birbirine bağlayın.\n\nÖrnek Senaryo:\n● Sadık müşterilere özel bir ödül programı geliştirin ve otomatik kampanyalarla yönetin."
+      },
+      "6": {
+        "title": "Satın Almaları Teşvik Eden Kişiselleştirilmiş E-postalar Gönderin",
+        "details": "Kişiselleştirilmiş e-postalar, dönüşüm oranlarını artırmanın etkili bir yoludur.\n\nTeknik Yaklaşım:\n● Dinamik İçerik: Kullanıcıların adı, son alışverişi veya konumu gibi bilgileri e-postada gösterin.\n● Segment Entegrasyonu: CRM'den gelen segment verilerini e-posta sistemine entegre edin.\n● Test: A/B testleriyle en etkili içerik türlerini belirleyin.\n\nAraçlar:\n● Mailchimp, Klaviyo\n● Python Email Automation kütüphaneleri"
+      },
+      "7": {
+        "title": "Yüksek Değere Sahip Müşterileri İndirimlerle Hedefleyin",
+        "details": "Müşteri ömür boyu değerine (CLV) göre premium müşterilere özel teklifler sunun.\n\nTeknik Yaklaşım:\n● CLV Hesaplama: RFM (Recency, Frequency, Monetary) analiz modeli kullanın.\n● Özel Kampanyalar: CRM ile entegre bir kampanya yönetim sistemi geliştirin.\n\nÖrnek:\n● Ömür boyu değeri yüksek müşterilere ücretsiz kargo ve özel promosyonlar sunun."
+      },
+      "8": {
+        "title": "Pazarlama Otomasyonlarınızda Segmentleri Kullanın",
+        "details": "Segment bazlı pazarlama otomasyonlarıyla verimliliği artırın.\n\nTeknik Yaklaşım:\n● Zamanlama: Trigger-based email ve SMS gönderimleri.\n● Otomasyon Motorları: Segmentlere özel kampanyaları yönetmek için Zapier, ActiveCampaign."
+      },
+      "9": {
+        "title": "Hızlı Segmentasyon",
+        "details": "Büyük veri setleri üzerinde hızlı segmentasyon yapmak için veri işleme sürelerini optimize edin.\n\nTeknik Yaklaşım:\n● Veritabanı Optimizasyonu: NoSQL (MongoDB) ile büyük veri kümeleri için hızlı sorgulama.\n● Paralel İşleme: Hadoop veya Spark gibi araçlarla veri işleme hızını artırın."
+      },
+      "10": {
+        "title": "Doğru Müşterilerle Etkileşim Kurun",
+        "details": "Segmentlerin doğru müşteri gruplarını hedeflediğinden emin olun.\n\nTeknik Yaklaşım:\n● Davranış Analizi: Google Analytics ile kullanıcı davranışlarını inceleyin.\n● Etkileşim Stratejileri: Kişiselleştirilmiş mesajlar oluşturmak için chatbot'ları kullanın."
+      },
+      "11": {
+        "title": "Özel Nitelikler Ekleyin",
+        "details": "Segmentlere özel meta veriler ekleyerek hedeflemeyi geliştirin.\n\nTeknik Yaklaşım:\n● Özel Alanlar: CRM'de kullanıcı profillerine özel alanlar ekleyin.\n● Yapay Zeka: Segmentlerin ihtiyaçlarına göre içerik önerileri geliştirin."
+      },
+      "12": {
+        "title": "Müşteri Davranışlarından Öğrenin",
+        "details": "Geçmiş verilerden öğrenerek gelecekteki stratejileri optimize edin.\n\nTeknik Yaklaşım:\n● Davranış Analitiği: Python Pandas ve NumPy ile verileri analiz edin.\n● Tahmin Modelleri: Satın alma alışkanlıklarını tahmin eden modeller geliştirin."
+      }
+    },
+  
+
+
   "features": [
     {
       "title": "1. Müşteri Bulma Araçları",
@@ -334,8 +411,8 @@
   "navbar": {
     "home": "Anasayfa",
     "about": "Kurumsal",
-    "export": "E-İhracat",
-    "ecommerce": "E-Ticaret Çözümleri",
+    "ecommerce": "E-İhracat",
+    "ecommerceSolve": "E-İhracat Çözümleri",
     "digital": "Dijital Pazarlama"
   }
 }

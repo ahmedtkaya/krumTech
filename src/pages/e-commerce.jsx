@@ -106,22 +106,24 @@ export function ETrade() {
       </section>
 
       <section className="bg-white py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">{t("etrade.productsTitle")}</h2>
-          <p className="text-gray-500 mt-2">{t("etrade.productsSubtitle")}</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {t("etrade.products", { returnObjects: true }).map((item, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 flex items-center justify-center rounded-full bg-blue-100 text-blue-800 text-3xl mb-4 transition-transform duration-300 hover:scale-110">
-                {item.icon}
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="max-w-6xl mx-auto text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">{t("etrade.productsTitle")}</h2>
+    <p className="text-gray-500 mt-2">{t("etrade.productsSubtitle")}</p>
+  </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    {t("etrade.products", { returnObjects: true }).map((item, index) => (
+      <div key={index} className="flex flex-col items-center text-center">
+        <div className={`w-24 h-24 flex items-center justify-center rounded-full ${item.color} text-3xl mb-4 transition-transform duration-300 hover:scale-110`}>
+  {item.icon}
+</div>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
+        <p className="text-gray-600 text-sm">{item.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       <section className="bg-black py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">

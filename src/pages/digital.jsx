@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import { Typography } from "@material-tailwind/react";
 import { useTranslation } from "react-i18next";
-
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 export function Digital() {
   const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(null);
+  const [open, setOpen] = useState(null); 
+const strategies = t("digital.strategies", { returnObjects: true }); 
+const items = Object.entries(strategies); 
+const handleOpen = (value) => setOpen(open === value ? null : value); 
+
 
   return (
     <>
@@ -127,6 +136,41 @@ export function Digital() {
           </div>
         </div>
       </section>
+
+
+    <section id="data-driven-strategies" className="py-16 px-6 bg-gray-50">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">
+      {t("digital.strategies_title")}
+    </h2>
+
+    <div className="space-y-4">
+      {items.map(([key, { title, details }]) => (
+        <div key={key} className="bg-white shadow-lg rounded-xl border border-gray-200 overflow-hidden">
+          <Accordion
+            open={open === parseInt(key)}
+            icon={
+              <span className={`text-xl ${open === parseInt(key) ? "text-blue-600" : "text-blue-600"}`}>
+                {open === parseInt(key) ? "−" : "+"}
+              </span>
+            }
+          >
+            <AccordionHeader
+              onClick={() => handleOpen(parseInt(key))}
+              className="text-left px-6 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-50 transition-colors"
+            >
+              {key}. {title}
+            </AccordionHeader>
+            <AccordionBody className="px-6 pb-6 pt-2 bg-gray-50 text-gray-700 text-sm">
+              <pre className="whitespace-pre-wrap leading-relaxed">{details}</pre>
+            </AccordionBody>
+          </Accordion>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
      
       <section className="bg-[url('/img/b5.jpg')] bg-cover bg-center py-24 px-6">
