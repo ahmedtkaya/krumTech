@@ -1,28 +1,28 @@
-import { Home, Profile,ETrade,ECommerceSolve ,Digital} from "@/pages";
+import { Home, Profile, ETrade, ECommerceSolve, Digital } from "@/pages";
 
 export const routes = [
   {
-    name: "Anasayfa",
+    name: "navbar.home",
     path: "/home",
     element: <Home />,
   },
   {
-    name: "Kurumsal",
+    name: "navbar.about",
     path: "/profile",
     element: <Profile />,
   },
   {
-    name: "E-Ihracat",
+    name: "navbar.export",
     path: "/e-trade",
     element: <ETrade />,
   },
   {
-    name: "E-Ticaret Çözümleri",
+    name: "navbar.ecommerce",
     path: "/e-commerce-solve",
     element: <ECommerceSolve />,
   },
   {
-    name: "Dijital Pazarlama",
+    name: "navbar.digital",
     path: "/digital",
     element: <Digital />,
   },

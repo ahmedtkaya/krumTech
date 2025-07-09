@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 export function PageTitle({ section, heading, children, sectionClass = "" }) {
   return (
     <div className="mx-auto w-full px-4 text-center lg:w-6/12">
-      <Typography variant="lead" className={`font-semibold ${sectionClass}`}>
+      <Typography variant="lead" className={`font-semibold text-black ${sectionClass}`}>
         {section}
       </Typography>
       <Typography variant="h2" color="blue-gray" className="my-3">

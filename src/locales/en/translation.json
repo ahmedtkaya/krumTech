@@ -1,0 +1,344 @@
+{
+  "home": {
+    "hero_title": "Grow Your Business with Turkey's Leading E-Commerce Solutions!",
+    "hero_description": "Set up your e-commerce site now with a free demo, powerful modules, and innovative technologies. Step into the future of commerce!\n\nAchieving success in the e-commerce industry has never been easier! Turkey's leading e-commerce platform is here to grow your business with innovative technologies and user-friendly features. Whether you're a startup or a global brand, we offer customized solutions for guaranteed success.",
+    "feature_title1": "SEO & Marketing Tools",
+    "feature_desc1": "All the optimization tools you need to rank high in search engines.",
+    "feature_title2": "Integration Solutions",
+    "feature_desc2": "Simplify business processes with payment, cargo, and marketplace integrations.",
+    "feature_title3": "E-Export Support",
+    "feature_desc3": "We provide language, currency, and logistics solutions for international sales.",
+    "feature_title4": "Mobile App Support",
+    "feature_desc4": "Reach your customers anytime with iOS and Android-compatible apps.",
+    "section_title": "We Work for You",
+    "section_desc": "Our platform is not just an e-commerce tool but a business partner to grow your business. Our goal is to help our clients grow with personalized solutions.",
+    "contact_title": "Contact Us",
+    "contact_sub": "Apply Now for a Free Demo",
+    "contact_desc": "Check our pricing to explore e-commerce packages.",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_subject": "Subject",
+    "form_message": "Message",
+    "form_button": "Send",
+    "form_terms": "Terms and Conditions",
+    "features_cards": [
+    {
+      "title": "SEO & Marketing Tools",
+      "desc": "All the optimization tools you need to rank high in search engines.",
+      "image": "/img/r.png"
+    },
+    {
+      "title": "Integration Solutions",
+      "desc": "Simplify business processes with payment, cargo, and marketplace integrations.",
+      "image": "/img/e.png"
+    },
+    {
+      "title": "E-Export Support",
+      "desc": "We provide language, currency, and logistics solutions for international sales.",
+      "image": "/img/i.png"
+    },
+    {
+      "title": "Mobile App Support",
+      "desc": "Reach your customers anytime with iOS and Android-compatible apps.",
+      "image": "/img/m.png"
+    }
+  ],
+    "contact_cards": [
+      {
+        "title": "Ease of Use",
+        "description": "Manage your site without needing technical knowledge.",
+        "icon": "BriefcaseIcon"
+      },
+      {
+        "title": "Flexibility",
+        "description": "Adapt the platform to your business's changing needs.",
+        "icon": "ChartBarIcon"
+      },
+      {
+        "title": "Security",
+        "description": "Ensure your data is safe with our ISO-certified infrastructure.",
+        "icon": "PlayIcon"
+      }
+    ],
+    "features": [
+    {
+      "title": "Comprehensive E-Commerce Solutions",
+      "description": "We offer customizable packages and a user-friendly admin panel tailored to your business needs.",
+      "icon": "ComputerDesktopIcon"
+    },
+    {
+      "title": "Innovative Technology",
+      "description": "With our AI-powered infrastructure, we carry your business into the future. SEO tools, marketing automation, analysis modules and more help you stay ahead of your competitors.",
+      "icon": "RocketLaunchIcon"
+    },
+    {
+      "title": "24/7 Support and Training",
+      "description": "We’re here whenever you need us! Our technical support team, training materials and extensive documentation ensure quick solutions to your questions.",
+      "icon": "PhoneIcon"
+    },
+    {
+      "title": "Strong References",
+      "description": "Hundreds of brands from industries like fashion, technology and food have trusted us. You can join their success stories too.",
+      "icon": "ChatBubbleBottomCenterTextIcon"
+    }
+  ]
+    
+    
+  },
+
+  "profile": {
+    "bannerTitle": "Strong Infrastructure, Reliable Service",
+    "bannerSubtitle": "Discover the Power of Technology with Krum Technology",
+    "bannerDescription": "At Krum Technology, we provide innovative solutions that push the boundaries of technology and aim to meet our customers' needs in the best possible way. With our strong infrastructure, reliable service approach, and customer-focused mindset, we stand by our business partners in both local and global markets.",
+    "visionTitle": "Our Vision",
+    "visionDescription1": "At Krum Technology, our vision is to lead businesses through their technological transformation processes in an increasingly digital world, preparing them not only for today’s competitive environment but also for the challenges of tomorrow. With our innovative solutions, we empower companies by strengthening their digital infrastructure and enabling them to achieve sustainable growth.We see technology not merely as a tool, but as a strategic force that reshapes business processes, enhances efficiency, and elevates the customer experience to the highest level. With this perspective, we guide businesses from all sectors on their digitalization journey and help them thrive in the future.Our vision is to add value not only to large enterprises but also to small and medium-sized businesses by turning them into strong and effective players in the digital economy. By adopting an innovation-driven approach, we aim to create lasting impact in the business world through reliable, accessible, and sustainable technology solutions.",
+    "visionDescription2": "We see technology not just as a tool but as a strategic force transforming the business world. Guided by this perspective, we continue to develop innovative solutions in areas such as artificial intelligence, big data, cloud computing, and automation.",
+    "visionDescription3": "Our vision is to add value to businesses of all sizes through technology, make them a strong part of the digital economy, and guide them in turning into a success story from national to global markets.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "Our core mission is to support the growth of our clients' businesses by providing reliable infrastructure solutions and innovative services—not only helping them optimize their current operations but also empowering them to achieve their long-term goals. We aim to make technology accessible and sustainable across all areas of business, enabling companies to strengthen their competitive edge and advance confidently on their digital transformation journey. By gaining a deep understanding of our clients' unique needs, we strive to deliver tailored solutions that elevate their businesses to the next level.",
+    "teamTitle": "Our Team and Areas of Expertise",
+    "teamDescription": "Krum Technology has a team of the most talented professionals in the industry. Our team's priority is to understand your business needs and provide the most suitable solutions.",
+    "expertise": {
+      "techTitle": "Technical Expertise",
+      "techDesc": "A specialized team of infrastructure engineers, software developers, and system analysts.",
+      "marketingTitle": "Marketing and Strategy",
+      "marketingDesc": "An experienced team offering strategic solutions to make a difference in the digital world.",
+      "supportTitle": "Customer Support Team",
+      "supportDesc": "A dedicated team of professionals providing instant responses and solution-oriented support."
+    }
+  },
+
+  "etrade": {
+    "bannerTitle": "Unlock the Gates to the Global Market with E-Export",
+    "bannerSubtitle": "Step into the Global Market with E-Export",
+    "bannerDescription": "The world is experiencing the era of digitalization, which is rapidly eliminating borders. Thanks to e-Export, you can increase your income by making your business accessible globally and without any local differences. With the right strategies and a strong infrastructure, it is now very easy to reach your products from all over the world. Come, we are developing what we can do to globalize.",
+    "whyTitle": "Why Is E-Export Important?",
+    "whyCards": [
+      { "icon": "🌍", "title": "Expand to the Global Market", "desc": "Reach customers around the world through digital channels." },
+      { "icon": "🚀", "title": "Brand Awareness", "desc": "Increase your online visibility and reach more users." },
+      { "icon": "💰", "title": "Foreign Currency Revenue", "desc": "Convert your earnings into foreign currency by selling abroad." },
+      { "icon": "👥", "title": "Customer Base", "desc": "Accelerate your growth by reaching new customer groups." },
+      { "icon": "⚔️", "title": "Competitive Advantage", "desc": "Stand out from competitors and gain a strong market position." }
+    ],
+    "advantagesTitle": "Advantages of E-Export",
+    "advantagesDescription": "E-export offers unique advantages to businesses. Here are some reasons to choose this business model:",
+    "advantagesCards": [
+      { "title": "Global Reach", "desc": "You can deliver your products all around the world. Thanks to advanced cargo integrations, you can deliver your products quickly." },
+      { "title": "Cost Advantage", "desc": "Unlike traditional replacement, sales can be made to vehicle organizations and physical stores with less expansion in the warehouse." },
+      { "title": "24/7 Sales Opportunity", "desc": "Your e-commerce site is open 24 hours a day. In this way, you can reach parts in different time zones." },
+      { "title": "Brand Power", "desc": "Being present in the international market takes your brand one step further. You can establish a strong bond with different individuals." }
+    ],
+    "solutionsTitle": "Our E-Export Solutions",
+    "solutionsList": [
+      {
+        "title": "Multi-Language and Currency",
+        "desc": "Your customers can shop in their own language and currency. It provides ease through automatic currency conversion and secure payments."
+      },
+      {
+        "title": "Logistics and Cargo Integrations",
+        "desc": "We offer full integration with global logistics companies like DHL, UPS, and FedEx. Easily track orders and enhance customer satisfaction."
+      },
+      {
+        "title": "Local Payment Systems",
+        "desc": "Thanks to our infrastructure compatible with systems like PayPal and Stripe, your customers can securely complete their payments."
+      },
+      {
+        "title": "Tax and Customs Management",
+        "desc": "The system automatically handles tax and customs procedures required for e-export. This ensures legal compliance and simplifies operations."
+      },
+      {
+        "title": "Marketing and SEO Support",
+        "desc": "Promote your products and brand in global markets through international SEO, social media integration, and advertising support."
+      }
+    ],
+    "howToStartTitle": "How to Start E-Export?",
+    "howToStartSteps": [
+      { "step": "1", "title": "Set Up Your E-Commerce Site", "desc": "Showcase your products with a user-friendly infrastructure." },
+      { "step": "2", "title": "Integrate Global Payment & Logistics", "desc": "Offer a fast and secure shopping experience for your customers." },
+      { "step": "3", "title": "Conduct Market Research", "desc": "Analyze customer needs and shopping trends in target countries." },
+      { "step": "4", "title": "Apply Digital Marketing Strategies", "desc": "Reach global customers with social media, SEO and email campaigns." },
+      { "step": "5", "title": "Manage Tax and Legal Processes", "desc": "Comply with customs procedures and international trade rules" }
+    ],
+    "productsTitle": "Which Products Are Ideal for E-Export?",
+    "productsSubtitle": "Top product categories in global markets:",
+    "products": [
+      { "icon": "👕", "title": "Textiles & Fashion", "desc": "Turkish textile products attract worldwide attention." },
+      { "icon": "🥦", "title": "Food Products", "desc": "Organic and local products attract global customers." },
+      { "icon": "🎁", "title": "Handicrafts & Gifts", "desc": "Cultural and unique products are attractive to global buyers." },
+      { "icon": "💻", "title": "Technology Products", "desc": "Electronic devices and accessories are in great demand" }
+    ],
+    "bottomTitle": "Globalize Your Business with E-Export",
+    "bottomDesc": "Our e-export solutions are designed to turn your business into a global brand:",
+    "bottomList": [
+      "✔ Start selling abroad immediately.",
+      "✔ Adapt your e-commerce site for global markets.",
+      "✔ Easily reach customers worldwide."
+    ],
+    "bottomCardTitle": "We’re Ready for You",
+    "bottomCardDesc": "Success in global trade is possible with the right business partners. Our comprehensive solutions make it easier for your business to achieve its global goals. Contact us now to get more information and request a free demo.",
+    "bottomCardButton": "Request a Demo"
+  },
+
+  "ecommerceSolve": {
+    "bannerTitle": "E-Commerce Packages Tailored for Your Business",
+    "bannerDescription": "Are you looking for a solution that exactly meets your needs in your e-commerce journey? Whether you are a small entrepreneur or a large brand, it is now very easy to succeed with our specially designed e-commerce packages. Choose the one that best suits your business from our packages equipped with technology, flexibility, and user-friendly features.",
+    "sectionTitle": "Package Solutions for Every Need",
+    "sectionSubtitle": "Our e-commerce platforms are developed to meet various business needs. From small enterprises to large brands focusing on high-volume sales, we have a package suitable for every business.",
+    "packages": {
+      "start": {
+        "title": "Starter Package",
+        "description": "Designed for businesses starting e-commerce for the first time. Includes an easy-to-use interface, basic product management, and payment infrastructure.",
+        "modalTitle": "Quick Start to E-Commerce",
+        "modalDesc": "If you're stepping into e-commerce as a new business, this package is perfect for you!",
+        "featuresTitle": "Features",
+        "features": ["User-friendly interface", "Basic SEO tools", "24/7 technical support", "Marketplace integrations", "Up to 50 products"],
+        "advantagesTitle": "Advantages",
+        "advantages": ["Low cost", "Quick setup", "Covers startup needs"]
+      },
+      "mid": {
+        "title": "Mid-Level Package",
+        "description": "Ideal for businesses ready to grow, with a broader product range, advanced customer analytics, and SEO tools.",
+        "modalTitle": "Grow Your Business",
+        "modalDesc": "If you want to grow your e-commerce, this package is for you.",
+        "featuresTitle": "Features",
+        "features": ["Advanced SEO management tools", "Multi-language and currency support", "Campaign and discount modules", "Dynamic stock management", "Mobile-friendly design options"],
+        "advantagesTitle": "Advantages",
+        "advantages": ["International sales", "Increased traffic", "More conversions"]
+      },
+      "pro": {
+        "title": "Premium Package",
+        "description": "Designed for large businesses with high-volume sales. Includes full customization, integrations, and professional support.",
+        "modalTitle": "Professional E-Commerce Management",
+        "modalDesc": "Premium solutions for those with high-volume sales.",
+        "featuresTitle": "Features",
+        "features": ["Artificial intelligence-based analysis and reporting tools", "The ability to create your own mobile app", "Unlimited product additions", "Multi-store management", "VIP support service"],
+        "advantagesTitle": "Advantages",
+        "advantages": ["Special tools that help you stay ahead of your competitors", "Superior customer experience", "Scalable solutions for large-scale businesses"]
+      }
+    },
+    "whyTitle": "Why Choose Our Packages?",
+    "whyReasons": [
+      ["Flexibility and Scalability", "A platform that adapts to your business's growth rate."],
+      ["Reliable Infrastructure", "Your data is protected with high security standards."],
+      ["User-Friendly", "Easily manage your site without any technical knowledge."],
+      ["24/7 Technical Support", "Our 24/7 support team is always here for you."],
+      ["Easy Integration", "Streamline all your business processes with shipping, payment systems, and marketplace integrations."]
+    ],
+    "whyFinal": "Grow your business with e-commerce packages to suit every need, from small businesses to large brands. We offer SEO tools, marketplace integration, and custom solutions. Discover it now!"
+  },
+
+ "digital": {
+  "bannerTitle": "Grow Your Business with Our Digital Marketing Services",
+  "bannerSubtitle": "Reach More Customers with Digital Marketing",
+  "bannerDescription": "In the digital age, the secret to a successful business lies in an effective digital marketing strategy. At Krum Technology, we offer comprehensive digital marketing services to help your business stand out online, expand your audience, and increase your sales.",
+
+  "powerTitle": "The Power of Digital Marketing",
+  "powerDesc1": "Digital marketing is a strategic bridge that connects your brand to your target audience in the most effective way. Unlike traditional marketing methods, digital marketing offers unique advantages such as understanding customer behavior, making data-driven decisions, delivering personalized content, and maximizing conversion rates.",
+  "powerDesc2": "At Krum Technology, we understand that every business has unique needs. That’s why we develop flexible and measurable digital marketing strategies tailored specifically to your goals and industry.",
+  "powerDesc3": "Our solutions do more than just increase your visibility — they enhance brand recognition, strengthen customer loyalty, and deliver real, measurable outcomes. From social media management and search engine optimization to content marketing and retargeting campaigns, we manage every channel effectively to help you stay ahead in the digital landscape.",
+  "audience_title": "Know Your Audience and Reach Them Effectively",
+  "audience_content": "An effective digital marketing strategy is not limited to just producing content or running ads. Real success begins with deeply understanding your target audience and turning that knowledge into a strategic advantage. To make your brand stand out in the digital world, we first analyze who your customers are, what they’re interested in, which platforms they use, and their purchasing behavior in detail.\n\nWith our data-driven approaches, we base marketing processes not on intuition, but on powerful insights. We track user behavior in real time, interpret the data, and continuously improve targeting. This way, we not only reach broad audiences but also connect with high-potential individuals in the most effective way.\n\nThrough advanced segmentation techniques, personalized campaigns, and multi-channel engagement strategies, we strengthen your digital presence. We make every touchpoint meaningful, enhance the customer experience, and increase loyalty.",
+
+  "servicesTitle": "Our Services",
+  "services": [
+    { "title": "SEO (Search Engine Optimization)", "desc": "We ensure your website ranks high in search engines. We increase your organic traffic through keyword research, content optimization, and technical SEO efforts.", "icon": "🔍" },
+    { "title": "PPC Ad Management", "desc": "We create effective advertising campaigns on Google, Facebook, Instagram, and other platforms. We maximize your return on investment (ROI) by reducing your cost per click.", "icon": "💰" },
+    { "title": "Social Media Management", "desc": "We professionally manage your brand's social media accounts.We increase your engagement through content creation, community", "icon": "📱" },
+    { "title": "Email Marketing", "desc": "We create effective email campaigns that reach your target audience.We help you build a loyal customer base and increase sales through remarketing strategies.", "icon": "✉️" },
+    { "title": "Content Marketing", "desc": "We increase your brand's authority through blog posts, video content, e-books, and more.We create original content that will engage your target audience.", "icon": "📝" },
+    { "title": "Conversion Rate Optimization (CRO)", "desc": "We conduct data analytics and A/B testing to increase the conversion rates of your website and digital ads.", "icon": "📊" },
+    { "title": "Digital Strategy & Consulting", "desc": "We develop digital marketing strategies specifically for your business.Our expert team creates a roadmap to help you achieve your business goals.", "icon": "🧭" } ],
+  
+  
+
+
+
+  "whyTitle": "Why Choose Krum Technology?",
+  "whyReasons": [
+    { "title": "Data-Driven Approach", "desc": "All our strategies are based on data analytics, enabling you to achieve measurable results." },
+    { "title": "Expert Team", "desc": "Our digital marketing experts leverage the latest industry trends and techniques to take your business one step further." },
+    { "title": "Full Integration", "desc": "Your digital marketing campaigns work in complete harmony with your e-commerce platforms and CRM systems." },
+    { "title": "Customer-Centric", "desc": "We focus on understanding your target audience and developing solutions tailored to their needs." },
+    { "title": "Comprehensive Service", "desc": "We meet all your digital marketing needs, from SEO and social media to content marketing and conversion optimization." }
+  ],
+
+  "processTitle": "Our Digital Marketing Process",
+  "processSteps": [
+    { "step": "1. Analysis & Planning", "desc": "We analyze your business's current status and goals. We define your target audience and create a strategic plan.", "icon": "📊" },
+    { "step": "2. Strategy Development", "desc": "We develop a digital marketing strategy tailored to your industry and needs.", "icon": "🧠" },
+    { "step": "3. Implementation", "desc": "We implement activities such as advertising campaigns, SEO efforts, and content creation.", "icon": "🚀" },
+    { "step": "4. Optimization", "desc": "We regularly monitor campaign performance and optimize for maximum results.", "icon": "🔁" }
+  ],
+
+  "dataTitle": "Data-Driven Marketing Strategies",
+  "featuresTitle": "KRUM E-Com Features",
+
+  "accordionSections": [
+    { "title": "1. Own Your Customer Data", "summary": "Integrate data into your business and secure it." },
+    { "title": "2. Endless Possibilities", "summary": "Create unlimited segment combinations." },
+    { "title": "3. Dynamic Updates", "summary": "Update segments based on user behavior." },
+    { "title": "4. Build Trust", "summary": "Protect data to enhance brand trust." },
+    { "title": "5. Make Segments Actionable", "summary": "Use segments in sales and marketing." },
+    { "title": "6. Send Personalized Emails", "summary": "Boost conversions with dynamic emails." },
+    { "title": "7. Target High-Value Customers", "summary": "Offer exclusive deals to premium users." },
+    { "title": "8. Use Segments in Automations", "summary": "Increase efficiency with automated workflows." },
+    { "title": "9. Fast Segmentation", "summary": "Optimize big data for faster targeting." },
+    { "title": "10. Engage the Right Customers", "summary": "Deliver relevant messages to the right people." },
+    { "title": "11. Add Custom Attributes", "summary": "Improve targeting with meta fields." },
+    { "title": "12. Learn from Customer Behavior", "summary": "Use past data to refine strategies." }
+  ],
+
+  "features": [
+    {
+      "title": "1. Customer Acquisition Tools",
+      "back": "KRUM E-Com offers a wide range of tools to help businesses acquire new customers.\n● Social Media Integrations: Connect directly to Facebook, Instagram, TikTok, Pinterest, and Snapchat.\n● Online Marketplaces: Seamless integrations with Amazon, Walmart, Target+, and eBay.\n● KRUM E-Com Collabs: Expand visibility and sales through influencer collaborations."
+    },
+    {
+      "title": "2. Marketing Automation",
+      "back": "Streamline your marketing operations and strengthen customer relationships.\n● Lead Capture: Collect customer information through forms.\n● Branded Emails: Send personalized and professional email campaigns.\n● Scheduling and Segmentation: Send the right message at the right time.\n● KRUM E-Com Inbox: Manage customer responses from one place."
+    },
+    {
+      "title": "3. Integrations & Ad Management",
+      "back": "Manage all your marketing efforts with seamless integrations.\n● Connect with Google, TikTok, and Pinterest for ad campaigns.\n● Source Analysis: Identify top-performing ad channels.\n● Budget Optimization: Maximize ROI through smart spending.\n● Targeting: Show the right campaigns to the right users."
+    },
+    {
+      "title": "4. Analytics & Data Usage",
+      "back": "Make data-driven decisions to grow your business.\n● Campaign Measurement: Track the success of marketing efforts.\n● Cost vs Revenue: Understand the efficiency of your campaigns.\n● Strategy: Build decisions on real-time analytics."
+    },
+    {
+      "title": "5. Omnichannel Marketing Strategies",
+      "back": "KRUM E-Com allows you to reach customers through multiple channels:\n● Sync Products Across Social Media and Marketplaces: You can increase visibility by listing your products on multiple platforms.\n● Reach Customers Across All Channels: KRUM E-Com enables you to deliver a consistent customer experience across all channels."
+    },
+    {
+      "title": "6. Customer Experience & Relationship Management",
+      "back": "Foster stronger customer relationships and loyalty.\n● Unified Inbox: Manage all customer messages in one place.\n● Personalization: Deliver tailored campaigns for better satisfaction.\n● Higher Conversions: Optimize interactions to drive more sales."
+    }
+  ]
+},
+"footer": {
+    "description": "As one of Turkey's leading technology solution providers, we support your digital transformation with our innovative and reliable services.",
+    "social": "SOCIAL MEDIA",
+    "contact": "CONTACT INFO",
+    "address": "A Registered Agent, Inc.8 The Green STE AKENT COUNTYDover, DE, 19901, United States",
+    "copyright": "Copyright © {{year}} Krum Technology - All rights reserved."
+  },
+
+ 
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "export": "E-Export",
+    "ecommerce": "E-Commerce Solutions",
+    "digital": "Digital Marketing"
+  }
+ }
+
+
+  
+
+ 
+
+
+ 
+
+

@@ -2,19 +2,18 @@ import React from "react";
 import {
   Card,
   Typography,
-  Button,
-  Input,
-  Textarea,
-  Checkbox,
 } from "@material-tailwind/react";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard } from "@/widgets/cards";
 import { featuresData, contactData } from "@/data";
+import { useTranslation } from "react-i18next";
 
 export function Profile() {
+  const { t } = useTranslation();
+
   return (
     <>
-      {/* Banner Section */}
+      
       <div className="relative flex min-h-[90vh] items-center justify-center">
         <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
@@ -22,38 +21,36 @@ export function Profile() {
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               <Typography variant="h1" color="white" className="mb-6 font-black">
-                Güçlü Altyapı, Güvenilir Hizmet
+                {t("profile.bannerTitle")}
               </Typography>
               <Typography variant="h2" color="white" className="mb-6 font-black">
-                Krum Technology ile Teknolojinin Gücünü Keşfedin
+                {t("profile.bannerSubtitle")}
               </Typography>
-
               <Typography variant="lead" color="white" className="opacity-80">
-                Krum Technology olarak, teknolojinin sınırlarını zorlayan ve müşterilerimizin ihtiyaçlarını en iyi şekilde karşılamayı hedefleyen yenilikçi çözümler sunuyoruz. Güçlü altyapımız, güvenilir hizmet anlayışımız ve müşteri odaklı yaklaşımımızla, hem yerel hem de global pazarda iş ortaklarımızın yanında yer alıyoruz.
+                {t("profile.bannerDescription")}
               </Typography>
             </div>
           </div>
         </div>
       </div>
 
-      {/* 2 adet yazı + resim bloğu */}
+    
       <section className="bg-gray-100 py-24 px-4">
         <div className="container mx-auto flex flex-col gap-24">
           <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
-                 Vizyonumuz
+                {t("profile.visionTitle")}
               </Typography>
               <Typography className="text-blue-gray-600 text-base">
-                Krum Technology olarak vizyonumuz, dijitalleşen dünyada işletmelerin teknolojik dönüşüm süreçlerine öncülük ederek sürdürülebilir başarıyı mümkün kılmaktır. Amacımız yalnızca günümüz ihtiyaçlarını karşılayan çözümler sunmak değil, aynı zamanda geleceğe yön veren teknolojik altyapılar geliştirerek müşterilerimizin rekabet gücünü artırmaktır.
+                {t("profile.visionDescription1")}
               </Typography>
               <Typography className="text-blue-gray-600 text-base">
-                Teknolojiyi sadece bir araç olarak değil, iş dünyasını dönüştüren stratejik bir güç olarak görüyoruz. Bu bakış açısıyla hareket ederek, yapay zeka, büyük veri, bulut bilişim ve otomasyon gibi alanlarda inovatif çözümler üretmeye devam ediyoruz
+                {t("profile.visionDescription2")}
               </Typography>
               <Typography className="text-blue-gray-600 text-base">
-                Vizyonumuz; her ölçekteki işletmeye teknolojiyle değer katmak, onları dijital ekonominin güçlü bir parçası haline getirmek ve ulusal pazardan global pazara uzanan bir başarı hikayesine dönüşmelerine rehberlik etmektir.
+                {t("profile.visionDescription3")}
               </Typography>
-
             </div>
             <div className="lg:w-1/2">
               <img src="/img/D.png" alt="E-Ticaret Teknoloji" className="h-[400px] w-full object-cover rounded-lg shadow-lg" />
@@ -62,19 +59,16 @@ export function Profile() {
         </div>
       </section>
 
+      
       <section className="bg-white py-24 px-4">
         <div className="container mx-auto flex flex-col gap-24">
           <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
             <div className="lg:w-1/2">
               <Typography variant="h3" className="mb-4 font-bold text-blue-gray-800">
-               Misyonumuz
+                {t("profile.missionTitle")}
               </Typography>
-              
               <Typography className="text-blue-gray-600 text-base">
-               Güvenilir altyapı çözümleri ve yenilikçi hizmetler sunarak müşterilerimizin işlerini büyütmelerine destek olmak temel misyonumuzdur.
-İş süreçlerini daha verimli, hızlı ve sürdürülebilir hale getirecek teknoloji çözümleri geliştirerek, müşterilerimizin rekabet avantajı elde etmesini sağlıyoruz.
-Müşteri memnuniyetini yalnızca bir hedef değil, bir öncelik olarak görüyor; her adımda onların ihtiyaçlarına özel çözümler sunmayı taahhüt ediyoruz.
-Global standartlara uygun, ölçeklenebilir ve sürdürülebilir dijital altyapılar geliştirerek, markaların hem yerel hem de uluslararası pazarda güçlü bir konum edinmelerine katkı sağlıyoruz.
+                {t("profile.missionDescription")}
               </Typography>
             </div>
             <div className="lg:w-1/2">
@@ -88,10 +82,10 @@ Global standartlara uygun, ölçeklenebilir ve sürdürülebilir dijital altyap�
       <section className="bg-gray-50 py-24 px-4">
         <div className="container mx-auto text-center">
           <Typography variant="h2" className="mb-6 font-bold text-blue-gray-800">
-            Ekibimiz ve Uzmanlık Alanlarımız
+            {t("profile.teamTitle")}
           </Typography>
           <Typography className="mb-12 max-w-3xl mx-auto text-blue-gray-600">
-            Krum Technology, sektördeki en yetenekli profesyonellerden oluşan bir ekibe sahiptir. Ekibimizin önceliği, işletmenizin ihtiyaçlarını anlamak ve en uygun çözümleri sunmaktır.
+            {t("profile.teamDescription")}
           </Typography>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -100,10 +94,10 @@ Global standartlara uygun, ölçeklenebilir ve sürdürülebilir dijital altyap�
                 <i className="fas fa-code text-3xl text-blue-600" />
               </div>
               <Typography variant="h5" className="font-bold mb-2">
-                Teknik Uzmanlık
+                {t("profile.expertise.techTitle")}
               </Typography>
               <Typography className="text-blue-gray-600 text-sm">
-                Altyapı mühendisleri, yazılım geliştiriciler ve sistem analistlerinden oluşan uzman kadro.
+                {t("profile.expertise.techDesc")}
               </Typography>
             </Card>
 
@@ -112,10 +106,10 @@ Global standartlara uygun, ölçeklenebilir ve sürdürülebilir dijital altyap�
                 <i className="fas fa-bullhorn text-3xl text-green-600" />
               </div>
               <Typography variant="h5" className="font-bold mb-2">
-                Pazarlama ve Strateji
+                {t("profile.expertise.marketingTitle")}
               </Typography>
               <Typography className="text-blue-gray-600 text-sm">
-                Dijital dünyada fark yaratmak için stratejik çözümler sunan deneyimli ekip.
+                {t("profile.expertise.marketingDesc")}
               </Typography>
             </Card>
 
@@ -124,20 +118,15 @@ Global standartlara uygun, ölçeklenebilir ve sürdürülebilir dijital altyap�
                 <i className="fas fa-headset text-3xl text-purple-600" />
               </div>
               <Typography variant="h5" className="font-bold mb-2">
-                Müşteri Destek Ekibi
+                {t("profile.expertise.supportTitle")}
               </Typography>
               <Typography className="text-blue-gray-600 text-sm">
-                Sorularınıza anında yanıt veren, çözüm odaklı profesyonellerden oluşan destek ekibi.
+                {t("profile.expertise.supportDesc")}
               </Typography>
             </Card>
           </div>
         </div>
       </section>
-
-      {/* Kartlar Bölümü */}
-      
-
-      
     </>
   );
 }

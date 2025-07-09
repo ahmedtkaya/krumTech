@@ -1,0 +1,355 @@
+{
+  "home": {
+    "hero_title": "Türkiye'nin Öncü E-Ticaret Çözümleri ile İşinizi Büyütün!",
+    "hero_description": "Ücretsiz demo, güçlü modüller ve yenilikçi teknolojilerle e-ticaret sitenizi hemen kurun. Ticaretin geleceğine adım atın!\n\nE-ticaret sektöründe başarıya ulaşmak hiç bu kadar kolay olmamıştı! Türkiye'nin lider e-ticaret platformu, yenilikçi teknolojiler ve kullanıcı dostu özellikleriyle işinizi büyütmek için burada. İster ilk adımlarını atan bir girişimci, ister global hedefleri olan bir marka olun, size özel çözümlerle başarıyı garantiliyoruz.",
+    "feature_title1": "SEO ve Pazarlama Araçları",
+    "feature_desc1": "Arama motorlarında üst sıralarda yer almanız için gerekli tüm optimizasyon araçları.",
+    "feature_title2": "Entegrasyon Çözümleri",
+    "feature_desc2": "Ödeme sistemleri, kargo yönetimi ve pazaryeri entegrasyonları ile iş süreçlerinizi kolaylaştırın.",
+    "feature_title3": "E-İhracat Destekleri",
+    "feature_desc3": "Yurt dışına satış için gerekli dil, para birimi ve lojistik çözümlerini sunuyoruz.",
+    "feature_title4": "Mobil Uygulama Desteği",
+    "feature_desc4": "iOS ve Android uyumlu uygulamalarla müşterilerinize her an ulaşabilirsiniz.",
+    "section_title": "Sizin için çalışıyoruz",
+    "section_desc": "Platformumuz, sadece bir e-ticaret aracı değil, aynı zamanda işinizi büyütmek için bir iş ortağıdır. Hedefimiz, her müşterimize kişiselleştirilmiş çözümler sunarak onların büyüme yolculuğuna katkıda bulunmak.",
+    "contact_title": "İletişime Geçin",
+    "contact_sub": "Ücretsiz Demo İçin Hemen Başvurun",
+    "contact_desc": "E-ticaret paketlerimizi keşfetmek için fiyatlarımızı inceleyin.",
+    "form_name": "İsim Soyisim",
+    "form_email": "Email Adresi",
+    "form_subject": "Konu Başlığı",
+    "form_message": "Mesaj",
+    "form_button": "Gönder",
+    "form_terms": "Şartlar ve Koşullar",
+    "features_cards": [
+    {
+      "title": "SEO ve Pazarlama Araçları",
+      "desc": "Arama motorlarında üst sıralarda yer almanız için gerekli tüm optimizasyon araçları.",
+      "image": "/img/r.png"
+    },
+    {
+      "title": "Entegrasyon Çözümleri",
+      "desc": "Ödeme sistemleri, kargo yönetimi ve pazaryeri entegrasyonları ile iş süreçlerinizi kolaylaştırın.",
+      "image": "/img/e.png"
+    },
+    {
+      "title": "E-İhracat Destekleri",
+      "desc": "Yurt dışına satış için gerekli dil, para birimi ve lojistik çözümlerini sunuyoruz.",
+      "image": "/img/i.png"
+    },
+    {
+      "title": "Mobil Uygulama Desteği",
+      "desc": "iOS ve Android uyumlu uygulamalarla müşterilerinize her an ulaşabilirsiniz.",
+      "image": "/img/m.png"
+    }
+  ],
+    "contact_cards": [
+      {
+        "title": "Kolay Kullanım",
+        "description": "Teknik bilgiye ihtiyaç duymadan sitenizi yönetin.",
+        "icon": "BriefcaseIcon"
+      },
+      {
+        "title": "Esneklik",
+        "description": "İşletmenizin değişen ihtiyaçlarına göre platformu uyarlayın.",
+        "icon": "ChartBarIcon"
+      },
+      {
+        "title": "Güvenlik",
+        "description": "ISO sertifikalı altyapımız ile verilerinizin güvende olduğundan emin olun.",
+        "icon": "PlayIcon"
+      }
+    ],
+    "features": [
+    {
+      "title": "Kapsamlı E-Ticaret Çözümleri",
+      "description": "İşletmenizin ihtiyaçlarına uygun paket seçenekleri, özelleştirilebilir tasarımlar ve kullanıcı dostu bir yönetim paneli sunuyoruz.",
+      "icon": "ComputerDesktopIcon"
+    },
+    {
+      "title": "Yenilikçi Teknoloji",
+      "description": "Yapay zeka destekli altyapımızla işletmenizi geleceğe taşıyoruz. SEO araçları, pazarlama otomasyonları, analiz modülleri ve daha fazlasıyla rakiplerinizin bir adım önünde olmanızı sağlıyoruz.",
+      "icon": "RocketLaunchIcon"
+    },
+    {
+      "title": "7/24 Destek ve Eğitim",
+      "description": "İhtiyacınız olduğunda yanınızdayız! Teknik destek ekibimiz, eğitim materyallerimiz ve kapsamlı dokümantasyonlarımız ile sorularınıza hızlı çözümler sunuyoruz.",
+      "icon": "PhoneIcon"
+    },
+    {
+      "title": "Güçlü Referanslar",
+      "description": "Moda, teknoloji, gıda gibi farklı sektörlerden yüzlerce marka bize güvendi. Onların başarı hikayelerine siz de katılabilirsiniz.",
+      "icon": "ChatBubbleBottomCenterTextIcon"
+    }
+  ]
+    
+
+  },
+  "profile": {
+    "bannerTitle": "Güçlü Altyapı, Güvenilir Hizmet",
+    "bannerSubtitle": "Krum Technology ile Teknolojinin Gücünü Keşfedin",
+    "bannerDescription": "Krum Technology olarak, teknolojinin sınırlarını zorlayan ve müşterilerimizin ihtiyaçlarını en iyi şekilde karşılamayı hedefleyen yenilikçi çözümler sunuyoruz. Güçlü altyapımız, güvenilir hizmet anlayışımız ve müşteri odaklı yaklaşımımızla, hem yerel hem de global pazarda iş ortaklarımızın yanında yer alıyoruz.",
+    "visionTitle": "Vizyonumuz",
+    "visionDescription1": "Krum Technology olarak vizyonumuz, dijitalleşen dünyada işletmelerin teknolojik dönüşüm süreçlerine öncülük etmek ve onları yalnızca bugünün değil, geleceğin de rekabetçi ortamına hazırlamaktır. Sunduğumuz yenilikçi çözümlerle, şirketlerin dijital altyapılarını güçlendirerek sürdürülebilir büyüme hedeflerine ulaşmalarını sağlıyoruz.Teknolojiyi yalnızca bir araç olarak değil; iş süreçlerini yeniden şekillendiren, verimliliği artıran ve müşteri deneyimini en üst seviyeye taşıyan stratejik bir güç olarak görüyoruz. Bu anlayışla, her sektörden işletmenin dijitalleşme yolculuğuna rehberlik ediyor, onları geleceğe taşıyoruz.Vizyonumuz; sadece büyük ölçekli kurumlara değil, küçük ve orta ölçekli işletmelere de teknolojiyle değer katmak, onları dijital ekonominin güçlü ve etkin aktörleri haline getirmektir. İnovasyonu merkezine alan yaklaşımımızla, güvenilir, erişilebilir ve sürdürülebilir teknoloji çözümleri geliştirerek iş dünyasında kalıcı bir fark yaratmayı hedefliyoruz.",
+    "visionDescription2": "Teknolojiyi sadece bir araç olarak değil, iş dünyasını dönüştüren stratejik bir güç olarak görüyoruz...",
+    "visionDescription3": "Vizyonumuz; her ölçekteki işletmeye teknolojiyle değer katmak, onları dijital ekonominin güçlü bir parçası haline getirmek...",
+    "missionTitle": "Misyonumuz",
+    "missionDescription": "Güvenilir altyapı çözümleri ve yenilikçi hizmetler sunarak, müşterilerimizin yalnızca mevcut iş süreçlerini iyileştirmelerine değil, aynı zamanda uzun vadeli hedeflerine ulaşmalarına da katkı sağlamak temel misyonumuzdur. Teknolojiyi iş dünyasının her alanında erişilebilir ve sürdürülebilir hale getirerek, şirketlerin rekabet gücünü artırmalarını ve dijital dönüşüm yolculuklarında sağlam adımlarla ilerlemelerini amaçlıyoruz. Müşterilerimizin ihtiyaçlarını derinlemesine anlayarak, onlara özel çözümler sunmak ve işlerini bir üst seviyeye taşımak için çalışıyoruz.",
+    "teamTitle": "Ekibimiz ve Uzmanlık Alanlarımız",
+    "teamDescription": "Krum Technology, sektördeki en yetenekli profesyonellerden oluşan bir ekibe sahiptir...",
+    "expertise": {
+      "techTitle": "Teknik Uzmanlık",
+      "techDesc": "Altyapı mühendisleri, yazılım geliştiriciler ve sistem analistlerinden oluşan uzman kadro.",
+      "marketingTitle": "Pazarlama ve Strateji",
+      "marketingDesc": "Dijital dünyada fark yaratmak için stratejik çözümler sunan deneyimli ekip.",
+      "supportTitle": "Müşteri Destek Ekibi",
+      "supportDesc": "Sorularınıza anında yanıt veren, çözüm odaklı profesyonellerden oluşan destek ekibi."
+    }
+  },
+
+  "etrade": {
+  "bannerTitle": "E-İhracat ile Global Pazarın Kapılarını Aralayın",
+  "bannerSubtitle": "E-İhracat ile Global Pazara Adım Atın",
+  "bannerDescription": "Dünya, sınırları hızla ortadan kaldıran dijitalleşme çağını yaşıyor. E-İhracat sayesinde işletmenizi yerel sınırların ötesine taşıyabilir, global müşterilere ulaşabilir ve gelirlerinizi artırabilirsiniz. Doğru stratejiler ve güçlü bir altyapı ile ürünlerinizi dünyanın dört bir yanına ulaştırmak artık çok kolay. Gelin, işinizi globalleştirmek için neler yapabileceğimizi keşfedin.",
+
+  "whyTitle": "E-İhracat Neden Önemlidir?",
+  "whyCards": [
+    { "icon": "🌍", "title": "Global Pazara Açılın", "desc": "Dijital kanallarla dünyanın dört bir yanındaki müşterilere erişim sağlayın." },
+    { "icon": "🚀", "title": "Marka Bilinirliği", "desc": "Online görünürlüğünüzü artırarak daha fazla kullanıcıya ulaşın." },
+    { "icon": "💰", "title": "Döviz Geliri", "desc": "Yurt dışına satış yaparak gelirlerinizi dövize çevirin." },
+    { "icon": "👥", "title": "Müşteri Tabanı", "desc": "Yeni müşteri kitlelerine ulaşarak büyümenizi hızlandırın." },
+    { "icon": "⚔️", "title": "Rekabet Avantajı", "desc": "Rakiplerinizden ayrışarak pazarda güçlü bir konum elde edin." }
+  ],
+
+  "advantagesTitle": "E-İhracatın Avantajları",
+  "advantagesDescription": "E-İhracat, işletmelere benzersiz avantajlar sunar. İşte bu iş modelini tercih etmeniz için bazı sebepler:",
+  "advantagesCards": [
+    { "title": "Global Erişim", "desc": "Dünyanın dört bir yanındaki müşterilere ürünlerinizi hızla ulaştırabilirsiniz.Gelişmiş kargo entegrasyonları sayesinde ürünlerinizi hızla teslim edebilirsiniz." },
+    { "title": "Maliyet Avantajı", "desc": "Geleneksel ihracatın aksine, aracı kuruluşlara ve fiziksel mağazalara bağımlı kalmadan daha düşük maliyetlerle satış yapabilirsiniz." },
+    { "title": "24/7 Satış İmkanı", "desc": "E-ticaret siteniz günün her saati açık. Bu sayede, farklı zaman dilimlerindeki müşterilere ulaşabilirsiniz." },
+    { "title": "Marka Gücü", "desc": "Uluslararası pazarda var olmak, markanızı bir adım öne taşır. Farklı ülkelerdeki müşterilerle güçlü bir bağ kurabilirsiniz." }
+  ],
+
+  "solutionsTitle": "E-İhracat için Sunduğumuz Çözümler",
+  "solutionsList": [
+    {
+      "title": "Çoklu Dil ve Para Birimi",
+      "desc": "Müşterileriniz kendi dillerinde ve para birimlerinde alışveriş yapabilir.Otomatik kur hesaplama ve ödeme işlemleri."
+      
+    },
+    {
+      "title": "Lojistik ve Kargo Entegrasyonları",
+      "desc": "DHL, UPS, FedEx gibi global lojistik şirketleriyle tam entegrasyon sağlar.Siparişlerinizi kolayca takip edebilirsiniz."
+    },
+    {
+      "title": "Yerel Ödeme Sistemleri",
+      "desc": "PayPal, Stripe gibi global ödeme sistemleri ile entegrasyon.Güvenli ödeme süreçleri."
+    },
+    {
+      "title": "Vergi ve Gümrük Yönetimi",
+      "desc": "İhracat sırasında gerekli vergi ve gümrük işlemlerini otomatikleştiren modüller.Yasal uyumluluk ve kolay süreç yönetimi."
+    },
+    {
+      "title": "Pazarlama ve SEO Destekleri",
+      "desc": "Uluslararası SEO çalışmaları ile yabancı arama motorlarında üst sıralarda yer almanızı sağlar.Sosyal medya entegrasyonları ve global reklam kampanyaları."
+    }
+  ],
+
+  "howToStartTitle": "E-İhracata Nasıl Başlanır?",
+  "howToStartSteps": [
+    { "step": "1", "title": "E-Ticaret Sitenizi Kurun", "desc": "Kullanıcı dostu bir altyapı ile ürünlerinizi sergileyin." },
+    { "step": "2", "title": "Global Ödeme ve Lojistik Sistemlerini Entegre Edin", "desc": "Müşterileriniz için hızlı ve güvenli bir alışveriş deneyimi sunun." },
+    { "step": "3", "title": "Pazar Analizi Yapın", "desc": "Hedef ülkelerdeki müşteri ihtiyaçlarını ve alışveriş trendlerini analiz edin." },
+    { "step": "4", "title": "Dijital Pazarlama Stratejileri Uygulayın", "desc": "Sosyal medya, SEO ve e-posta kampanyaları ile global müşterilere ulaşın." },
+    { "step": "5", "title": "Vergi ve Yasal Süreçleri Yönetin", "desc": "Gümrük işlemleri ve uluslararası ticaret kurallarına uyum sağlayın." }
+  ],
+
+  "productsTitle": "Hangi Ürünler E-İhracat İçin İdealdir?",
+  "productsSubtitle": "Global pazarda öne çıkan başlıca ürün kategorileri:",
+  "products": [
+    { "icon": "👕", "title": "Tekstil ve Moda", "desc": "Türk tekstil ürünleri dünya çapında ilgi görmektedir." },
+    { "icon": "🥦", "title": "Gıda Ürünleri", "desc": "Organik ve yerel ürünler global müşterilerin dikkatini çeker" },
+    { "icon": "🎁", "title": "El Sanatları & Hediyelik", "desc": "Kültürel ve benzersiz ürünler global alıcılar için çekicidir." },
+    { "icon": "💻", "title": "Teknoloji Ürünleri", "desc": "Elektronik cihazlar ve aksesuarlar büyük talep görmektedir." }
+  ],
+
+  "bottomTitle": "E-İhracatla İşinizi Globalleştirin",
+  "bottomDesc": "E-ihracat çözümlerimiz, işletmenizi global bir marka haline getirmek için tasarlanmıştır:",
+  "bottomList": [
+    "✔ Yurt dışı satışlarınıza hemen başlayın.",
+    "✔ E-ticaret sitenizi global pazarlara uygun hale getirin.",
+    "✔ Dünya çapında müşterilere kolayca ulaşın."
+  ],
+  "bottomCardTitle": "Sizin İçin Hazırız",
+  "bottomCardDesc": "Global ticarette başarı, doğru iş ortaklarıyla mümkündür. Sunduğumuz kapsamlı çözümler, işletmenizin global hedeflerine ulaşmasını kolaylaştırır. Daha fazla bilgi almak ve ücretsiz demo talep etmek için hemen bize ulaşın.",
+  "bottomCardButton": "Demo Talep Et"
+},
+
+"ecommerceSolve": {
+  "bannerTitle": "İşletmenize Uygun E-Ticaret Paketleri",
+  "bannerDescription": "E-ticaret yolculuğunuzda ihtiyaçlarınıza tam olarak cevap verecek bir çözüm mü arıyorsunuz? İster küçük bir girişimci, ister büyük bir marka olun, size özel hazırlanmış e-ticaret paketlerimizle başarıya ulaşmanız artık çok kolay. Teknoloji, esneklik ve kullanıcı dostu özelliklerle donatılmış paketlerimiz arasından işletmenize en uygun olanını seçin.",
+
+  "sectionTitle": "Her İhtiyaca Uygun Paket Çözümleri",
+  "sectionSubtitle": "E-ticaret platformlarımız, farklı işletme ihtiyaçlarına yönelik olarak geliştirilmiştir. Küçük ölçekli girişimlerden, yüksek hacimli satışlara odaklanan büyük markalara kadar her işletmeye uygun bir paketimiz bulunmaktadır.",
+
+  "packages": {
+    "start": {
+      "title": "Başlangıç Paketi",
+      "description": "İlk kez e-ticaret yapacak işletmelere özel olarak tasarlanmıştır. Kullanımı kolay arayüz, temel ürün yönetimi ve ödeme altyapısı içerir.",
+      "modalTitle": "E-Ticarete Hızlı Başlangıç",
+      "modalDesc": "Yeni bir işletme olarak e-ticarete adım atıyorsanız, bu paket tam size göre!",
+      "featuresTitle": "Özellikler",
+      "features": ["Kullanıcı dostu arayüz", "Temel SEO araçları", "7/24 teknik destek", "Pazaryeri entegrasyonları", "50 ürüne kadar yükleme"],
+      "advantagesTitle": "Avantajlar",
+      "advantages": ["Düşük maliyet", "Hızlı kurulum", "Başlangıç ihtiyaçlarını karşılar"]
+    },
+    "mid": {
+      "title": "Orta Düzey Paket",
+      "description": "Daha geniş ürün yelpazesi, gelişmiş müşteri analitiği ve SEO araçlarıyla büyümeye hazır işletmeler için uygundur.",
+      "modalTitle": "İşinizi Büyütün",
+      "modalDesc": "E-ticareti büyütmek istiyorsanız bu paket sizin için.",
+      "featuresTitle": "Özellikler",
+      "features": ["Gelişmiş SEO yönetim araçları","Çoklu dil ve para birimi desteği","Kampanya ve indirim modülleri","Dinamik stok yönetimi","Mobil uyumlu tasarım seçenekleri"],
+      "advantagesTitle": "Avantajlar",
+      "advantages": ["Uluslararası satış", "Ziyaretçi trafiği artışı", "Daha fazla dönüşüm"]
+    },
+    "pro": {
+      "title": "Premium Paket",
+      "description": "Yüksek hacimli satış yapan büyük işletmelere özel. Tam özelleştirme, entegrasyonlar ve profesyonel destek içerir.",
+      "modalTitle": "Profesyonel E-Ticaret Yönetimi",
+      "modalDesc": "Yüksek hacimli satış yapanlar için premium çözümler.",
+      "featuresTitle": "Özellikler",
+      "features": ["Yapay zeka tabanlı analiz ve raporlama araçları", "Kendi mobil uygulamanı oluşturma imkanı", "Limitsiz ürün ekleme", "Çoklu mağaza yönetimi", "VIP destek hizmeti"],
+      "advantagesTitle": "Avantajlar",
+      "advantages": ["Rakiplerinizin önüne geçmenizi sağlayan özel araçlar","Üst düzey müşteri deneyimi","Büyük hacimli işletmeler için ölçeklenebilir çözümler"]
+    }
+  },
+
+  "whyTitle": "Neden Bizim Paketlerimizi Seçmelisiniz?",
+  "whyReasons": [
+    ["Esneklik ve Ölçeklenebilirlik", "İşletmenizin büyüme hızıyla uyumlu bir platform."],
+    ["Güvenilir Altyapı", "Yüksek güvenlik standartları ile verileriniz koruma altında."],
+    ["Kullanıcı Dostu", "Hiçbir teknik bilgiye ihtiyaç duymadan sitenizi kolayca yönetebilirsiniz."],
+    ["7/24 Teknik Destek", "7/24 ulaşılabilir destek ekibimiz her zaman yanınızda."],
+    ["Kolay Entegrasyon", "Kargo, ödeme sistemleri ve pazaryeri entegrasyonları ile tüm iş süreçlerinizi kolaylaştırır."]
+  ],
+  "whyFinal": "Küçük işletmelerden büyük markalara, her ihtiyaca uygun e-ticaret paketleri ile işinizi büyütün. SEO araçları, pazaryeri entegrasyonu ve özel çözümler sunuyoruz. Hemen keşfedin!"
+},
+
+"digital": {
+  "bannerTitle": "Dijital Pazarlama Hizmetlerimiz ile İşinizi Büyütün",
+  "bannerSubtitle": "Dijital Pazarlama ile Daha Fazla Müşteriye Ulaşın",
+  "bannerDescription": "Dijital çağda başarılı bir işletme olmanın sırrı, etkili bir dijital pazarlama stratejisinden geçiyor. Krum Technology olarak, işletmenizin dijital dünyada fark edilmesini sağlayacak, müşteri kitlenizi genişletecek ve satışlarınızı artıracak kapsamlı dijital pazarlama hizmetleri sunuyoruz.",
+
+  "powerTitle": "Dijital Pazarlamanın Gücü",
+  "powerDesc1": "Dijital pazarlama, markanızı hedef kitlenize en etkili şekilde ulaştıran stratejik bir köprüdür. Geleneksel pazarlama yöntemlerinden farklı olarak, dijital pazarlama; müşteri davranışlarını analiz etme, veri odaklı kararlar alma, kişiselleştirilmiş içerikler sunma ve dönüşüm oranlarını maksimize etme gibi benzersiz avantajlar sunar.",
+  "powerDesc2": "Krum Technology olarak, her işletmenin ihtiyaçlarının farklı olduğunun bilincindeyiz. Bu nedenle sizin hedeflerinize ve sektörünüze özel, esnek ve ölçülebilir dijital pazarlama stratejileri geliştiriyoruz.",
+  "powerDesc3": "Sunduğumuz çözümler yalnızca görünürlük kazandırmakla kalmaz; marka bilinirliğini artırır, müşteri sadakatini pekiştirir ve gerçek, ölçülebilir sonuçlar sunar. Sosyal medya yönetiminden arama motoru optimizasyonuna, içerik pazarlamasından yeniden hedeflemeye kadar tüm kanalları etkin şekilde yöneterek sizi dijital dünyada bir adım öne taşıyoruz.",
+   "audience_title": "Hedef Kitlenizi Tanıyın ve Onlara Ulaşın",
+  "audience_content": "Etkili bir dijital pazarlama stratejisi, sadece içerik üretmek ya da reklam yayınlamakla sınırlı değildir. Gerçek başarı, hedef kitlenizi derinlemesine tanımak ve bu bilgiyi stratejik bir avantaja dönüştürmekle başlar. Biz, markanızı dijital dünyada öne çıkarmak için öncelikle müşterilerinizin kim olduğunu, nelere ilgi duyduğunu, hangi platformlarda zaman geçirdiğini ve satın alma alışkanlıklarını detaylı biçimde analiz ediyoruz.\n\nVeriye dayalı yaklaşımlarımız sayesinde, pazarlama süreçlerini sadece sezgilere değil, güçlü içgörülere dayandırıyoruz. Kullanıcı davranışlarını gerçek zamanlı olarak izliyor, bu verileri anlamlandırıyor ve hedeflemeyi sürekli geliştiriyoruz. Böylece mesajınızı yalnızca geniş kitlelere ulaştırmakla kalmıyor, aynı zamanda yüksek potansiyel taşıyan bireylere en etkili şekilde ulaşıyoruz.\n\nGelişmiş segmentasyon teknikleri, kişiselleştirilmiş kampanyalar ve çok kanallı etkileşim stratejileri ile dijital varlığınızı güçlendiriyoruz. Her temas noktasını anlamlı hale getiriyor, müşteri deneyimini iyileştiriyor ve sadakati artırıyoruz.",
+
+  "servicesTitle": "Hizmetlerimiz",
+  "services": [
+    { "title": "SEO (Arama Motoru Optimizasyonu)", "desc": "Web sitenizin arama motorlarında üst sıralarda yer almasını sağlıyoruz.", "icon": "🔍" },
+    { "title": "PPC Reklam Yönetimi", "desc": "Google, Facebook, Instagram ve diğer platformlarda etkili reklam kampanyaları oluşturuyoruz.", "icon": "💰" },
+    { "title": "Sosyal Medya Yönetimi", "desc": "Markanızın sosyal medya hesaplarını profesyonelce yönetiyoruz.İçerik oluşturma, topluluk yönetimi ve reklam kampanyaları ile etkileşiminizi artırıyoruz.", "icon": "📱" },
+    { "title": "E-Posta Pazarlama", "desc": "Hedef kitlenize ulaşacak etkili e-posta kampanyaları hazırlıyoruz.Sadık müşteri kitlesi oluşturmanızı ve yeniden pazarlama stratejileriyle satışları artırmanızı sağlıyoruz.", "icon": "✉️" },
+    { "title": "İçerik Pazarlama", "desc": "Blog yazıları, video içerikler, e-kitaplar ve daha fazlasıyla markanızın otoritesini artırıyoruz.", "icon": "📝" },
+    { "title": "Dönüşüm Optimizasyonu (CRO)", "desc": "Web sitenizin ve dijital reklamlarınızın dönüşüm oranlarını artırmak için veri analitiği ve A/B testleri yapıyoruz.", "icon": "📊" },
+    { "title": "Dijital Strateji ve Danışmanlık", "desc": "İşletmenize özel dijital pazarlama stratejileri geliştiriyoruz. Uzman ekibimiz, işletmenizin hedeflerine ulaşmanız için yol haritası oluşturuyor.", "icon": "🧭" }
+  ],
+
+  "whyTitle": "Neden Krum Technology’yi Tercih Etmelisiniz?",
+  "whyReasons": [
+    { "title": "Veri Odaklı Yaklaşım", "desc": "Tüm stratejilerimiz, ölçülebilir sonuçlar elde etmenizi sağlayan veri analitiğine dayalıdır." },
+    { "title": "Uzman Ekip", "desc": "Dijital pazarlama uzmanlarımız, sektördeki en son trendleri ve teknikleri kullanarak işletmenizi bir adım öne taşır." },
+    { "title": "Tam Entegrasyon", "desc": "Dijital pazarlama kampanyalarınız, e-ticaret platformlarınız ve CRM sistemlerinizle tam uyum içinde çalışır." },
+    { "title": "Müşteri Odaklılık", "desc": "Hedef kitlenizi anlamaya ve onların ihtiyaçlarına uygun çözümler geliştirmeye odaklanıyoruz." },
+    { "title": "Kapsamlı Hizmet", "desc": "SEO’dan sosyal medyaya, içerik pazarlamasından dönüşüm optimizasyonuna kadar tüm dijital pazarlama ihtiyaçlarınızı karşılıyoruz." }
+  ],
+
+  "processTitle": "Dijital Pazarlama Sürecimiz",
+  "processSteps": [
+    { "step": "1. Analiz ve Planlama", "desc": "İşletmenizin mevcut durumunu ve hedeflerini analiz ediyoruz. Hedef kitlenizi tanımlayarak stratejik bir plan oluşturuyoruz.", "icon": "📊" },
+    { "step": "2. Strateji Geliştirme", "desc": "Sektörünüze ve ihtiyaçlarınıza uygun bir dijital pazarlama stratejisi hazırlıyoruz.", "icon": "🧠" },
+    { "step": "3. Uygulama", "desc": "Reklam kampanyaları, SEO çalışmaları ve içerik üretimi gibi faaliyetleri uygulamaya koyuyoruz.", "icon": "🚀" },
+    { "step": "4. Optimizasyon", "desc": "Kampanyaların performansını düzenli olarak izliyor ve maksimum sonuçlar için optimize ediyoruz.", "icon": "🔁" }
+  ],
+  
+ 
+
+
+  "dataTitle": "Veriye Dayalı Pazarlama Stratejileri",
+  "featuresTitle": "KRUM E-Com Özellikleri",
+
+  "accordionSections": [
+    { "title": "1. Müşteri Verilerinizi Sahiplenin", "summary": "Müşteri verilerini iş süreçlerine entegre edin." },
+    { "title": "2. Sonsuz Olanaklar", "summary": "Segmentasyon ile sınırsız kombinasyon yaratın." },
+    { "title": "3. Dinamik Güncellemeler", "summary": "Davranış değişimlerine göre segmentleri güncelleyin." },
+    { "title": "4. Güveni Artırın", "summary": "Veri güvenliğiyle marka güvenilirliğini koruyun." },
+    { "title": "5. Segmentleri İşlevsel Hale Getirin", "summary": "Segmentleri pazarlama ve satış süreçlerine entegre edin." },
+    { "title": "6. Kişiselleştirilmiş E-postalar Gönderin", "summary": "E-postalarla dönüşüm oranlarını artırın." },
+    { "title": "7. Premium Müşterileri Hedefleyin", "summary": "CLV’ye göre özel teklifler sunun." },
+    { "title": "8. Segmentlerle Otomasyon Kullanın", "summary": "Segment bazlı otomasyonlarla verimlilik sağlayın." },
+    { "title": "9. Hızlı Segmentasyon", "summary": "Büyük verilerde hızlı işlem yapın." },
+    { "title": "10. Doğru Müşterilerle Etkileşim", "summary": "Doğru hedeflemeyle etkileşimi artırın." },
+    { "title": "11. Özel Nitelikler Ekleyin", "summary": "Segmentlere özel meta veriler ekleyin." },
+    { "title": "12. Davranışlardan Öğrenin", "summary": "Geçmiş verilerle stratejileri iyileştirin." }
+  ],
+
+  "features": [
+    {
+      "title": "1. Müşteri Bulma Araçları",
+      "back": "KRUM E-Com, işletmelerin yeni müşteriler kazanmasına yardımcı olmak için geniş bir araç yelpazesi sunar.\n● Sosyal Medya Entegrasyonları: Facebook, Instagram, TikTok, Pinterest ve Snapchat’e doğrudan bağlantılar.\n● Online Pazar Yerleri: Amazon, Walmart, Target+ ve eBay ile entegrasyon.\n● KRUM E-Com Collabs: Influencer iş birlikleriyle daha fazla görünürlük ve satış."
+    },
+    {
+      "title": "2. Pazarlama Otomasyonu",
+      "back": "Pazarlama süreçlerini kolaylaştırmak ve müşteri ilişkilerini güçlendirmek için otomasyon araçları içerir.\n● Potansiyel Müşteri Toplama: Formlarla müşteri bilgilerini alın.\n● Markalı E-Posta: Kişiselleştirilmiş, profesyonel e-posta gönderimleri.\n● Zamanlama ve Segmentasyon: Otomatik zamanlama ile doğru müşteriye doğru mesaj.\n● KRUM E-Com Inbox: Müşteri geri bildirimleri tek yerden yönetilir."
+    },
+    {
+      "title": "3. Entegrasyonlar ve Reklam Yönetimi",
+      "back": "Pazarlama kampanyalarınızı yönetmek için reklam entegrasyonları sunar.\n● Google, TikTok ve Pinterest entegrasyonları.\n● Sipariş Kaynağı Analizi: En çok sipariş getiren platformları belirleme.\n● Reklam Bütçesi Optimizasyonu: Harcamaları analiz ederek bütçeyi verimli kullanma.\n● Hedefleme: Müşteriye özel kampanya gösterimi."
+    },
+    {
+      "title": "4. Analiz ve Veri Kullanımı",
+      "back": "Veriye dayalı karar almayı destekler.\n● Pazarlama Sonuçları Ölçümü: Kampanya performanslarını ölçümleme.\n● Harcama ve Gelir Karşılaştırması: Gelire oranla pazarlama verimliliği.\n● Veriye Dayalı Strateji: Gerçek verilere dayanan karar mekanizması."
+    },
+    {
+      "title": "5. Çok Kanallı Pazarlama Stratejileri",
+      "back": "KRUM E-Com, müşterilere birçok kanal üzerinden ulaşmanıza olanak tanır.\n● Ürünlerin Sosyal Medya ve Pazar Yerlerinde Senkronize Edilmesi:Ürünlerinizi birden fazla platformda listeleyerek görünürlüğü artırabilirsiniz.\n● Tüm Kanallarda Müşterilere Ulaşma: KRUM E-Com, her kanalda tutarlı bir müşteri deneyimi sunmanızı sağlar."
+    },
+    {
+      "title": "6. Müşteri Deneyimi ve İlişki Yönetimi",
+      "back": "Müşteriyle daha güçlü ilişkiler kurmanıza destek olur.\n● Etkileşim Yönetimi: KRUM E-Com Inbox ile her mesajı tek panelden yönetin.\n● Kişiselleştirme: Öneriler ve kampanyalarla memnuniyet artırılır.\n● Satış Artışı: Optimize edilmiş deneyim ile daha fazla dönüşüm elde edilir."
+    }
+  ]
+},
+"footer": {
+    "description": "Türkiye'nin önde gelen teknoloji çözümleri sağlayıcısı olarak, yenilikçi ve güvenilir hizmetlerimizle dijital dönüşümünüzü destekliyoruz.",
+    "social": "SOSYAL MEDYA",
+    "contact": "İLETİŞİM BİLGİLERİ",
+    "address": "A Registered Agent, Inc.8 The Green STE AKENT COUNTYDover, DE, 19901, United States",
+    "copyright": "Copyright © {{year}} Krum Technology - Tüm hakları saklıdır."
+  },
+  "navbar": {
+    "home": "Anasayfa",
+    "about": "Kurumsal",
+    "export": "E-İhracat",
+    "ecommerce": "E-Ticaret Çözümleri",
+    "digital": "Dijital Pazarlama"
+  }
+}
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
