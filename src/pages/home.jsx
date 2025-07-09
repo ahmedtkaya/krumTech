@@ -201,7 +201,7 @@ export function Home() {
       onSubmit={sendEmail}
       className="mx-auto w-full mt-12 lg:w-5/12"
     >
-      <div className="mb-8 flex gap-8">
+      <div className="mb-8 flex flex-col gap-6 md:flex-row">
         <Input
           name="name"
           variant="outlined"

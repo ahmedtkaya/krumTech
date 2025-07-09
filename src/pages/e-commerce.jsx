@@ -46,25 +46,34 @@ export function ETrade() {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-24 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            {t("etrade.advantagesTitle")}
-          </h2>
-          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            {t("etrade.advantagesDescription")}
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {t("etrade.advantagesCards", { returnObjects: true }).map((item, index) => (
-              <div key={index} className="w-full max-w-[500px] rounded-lg shadow-lg overflow-hidden bg-white text-center p-6">
-                <img src={`/img/${index === 0 ? "g" : index === 1 ? "c" : index === 2 ? "24" : "b"}.png`} alt={item.title} className="w-60 h-60 object-cover rounded-[10px] shadow-2x1" />
-                <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+      <section className="bg-gray-100 py-20 px-4">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      {t("etrade.advantagesTitle")}
+    </h2>
+    <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+      {t("etrade.advantagesDescription")}
+    </p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {t("etrade.advantagesCards", { returnObjects: true }).map((item, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center transition hover:shadow-lg"
+        >
+          <img
+            src={`/img/${index === 0 ? "g" : index === 1 ? "c" : index === 2 ? "24" : "b"}.png`}
+            alt={item.title}
+            className="w-full h-52 object-cover rounded-lg mb-4"
+          />
+          <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
+          <p className="text-gray-600 text-sm">{item.desc}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section className="relative bg-white py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/backgrounds/311.jpg')] bg-cover bg-center opacity-50 z-0"></div>
