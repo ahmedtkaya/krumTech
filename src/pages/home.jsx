@@ -69,10 +69,10 @@ export function Home() {
 
     emailjs
       .sendForm(
-        "service_23ss",
-        "template_m117zpo",
+        "service_yabazpr",
+        "template_v4s9mst",
         form.current,
-        "_jpwZQuJ8hdVZqjqT"
+        "GL_yKndO8Bm1CiAOu"
       )
       .then(
         (result) => {
