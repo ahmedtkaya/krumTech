@@ -125,7 +125,7 @@ export function Navbar({ routes }) {
       </div>
 
       <MobileNav open={openNav}>
-        <div className="container mx-auto bg-black">{navList}</div>
+        <div className="container mx-auto bg-black ">{navList}</div>
       </MobileNav>
     </MTNavbar>
   );

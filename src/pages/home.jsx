@@ -127,18 +127,21 @@ export function Home() {
     <>
      
      
-<div className="relative h-[90vh] flex items-center justify-center">
-  <div className="absolute inset-0 bg-[url('/img/3.png')] bg-cover bg-center" />
-  <div className="absolute inset-0 bg-black/60" />
-  <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-      {t("home.hero_title")}
-    </h1>
-    <p className="text-lg text-white opacity-90">
-      {t("home.hero_description")}
-    </p>
+<section id="home" className="relative z-0">
+  <div className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <div className="absolute inset-0 bg-[url('/img/3.png')] bg-cover bg-center z-0" />
+    <div className="absolute inset-0 bg-black/60 z-10" />
+    <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        {t("home.hero_title")}
+      </h1>
+      <p className="text-lg text-white opacity-90">
+        {t("home.hero_description")}
+      </p>
+    </div>
   </div>
-</div>
+</section>
+
 
 
 <section className="relative z-20 -mt-20 px-6 pb-20">
