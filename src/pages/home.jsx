@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Card,
   Typography,
@@ -14,7 +14,7 @@ import contactDataEn from "../locales/en/translation.json";
 import contactDataTr from "../locales/tr/translation.json";
 import i18n from "i18next";
 
-// İkonlar
+
 import {
   BriefcaseIcon,
   ChartBarIcon,
@@ -24,6 +24,13 @@ import {
   PhoneIcon,
   ChatBubbleBottomCenterTextIcon,
 } from "@heroicons/react/24/solid";
+
+import {
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+} from "@material-tailwind/react";
 
 
 const iconMap = {
@@ -39,6 +46,16 @@ const iconMap = {
 export function Home() {
   const form = useRef();
   const { t } = useTranslation();
+
+  const [openModal, setOpenModal] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    title: "",
+    message: "",
+    terms: false,
+  });
 
   const featuresCards = t("home.features_cards", { returnObjects: true });
 
@@ -64,8 +81,17 @@ export function Home() {
     }
   }, []);
 
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true); // buton devre dışı
 
     emailjs
       .sendForm(
@@ -77,19 +103,30 @@ export function Home() {
       .then(
         (result) => {
           console.log(result.text);
-          alert(t("home.message_success"));
+          setOpenModal(true);
+          setFormData({
+            name: "",
+            email: "",
+            title: "",
+            message: "",
+            terms: false,
+          });
         },
         (error) => {
           console.log(error.text);
           alert(t("home.message_error"));
         }
-      );
+      )
+      .finally(() => {
+        setIsSending(false); // işlem bittiğinde tekrar tıklanabilir yap
+      });
   };
+
 
   return (
     <>
      
-     {/* HERO SECTION */}
+     
 <div className="relative h-[90vh] flex items-center justify-center">
   <div className="absolute inset-0 bg-[url('/img/3.png')] bg-cover bg-center" />
   <div className="absolute inset-0 bg-black/60" />
@@ -103,7 +140,7 @@ export function Home() {
   </div>
 </div>
 
-{/* ÖNE ÇIKAN KARTLAR */}
+
 <section className="relative z-20 -mt-20 px-6 pb-20">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     {[0, 1, 2, 3].map((index) => {
@@ -184,93 +221,125 @@ export function Home() {
 
     
       <section id="iletisim" className="relative bg-gray-100 py-24 px-4">
-  <div className="container mx-auto">
-    <PageTitle
-      section={t("home.contact_title")}
-      heading={
-        <Typography variant="h2" className="text-black">
-          {t("home.contact_sub")}
-        </Typography>
-      }
-    >
-      {t("home.contact_desc")}
-    </PageTitle>
+      <div className="container mx-auto">
+        <PageTitle
+          section={t("home.contact_title")}
+          heading={<Typography variant="h2" className="text-black">{t("home.contact_sub")}</Typography>}
+        >
+          {t("home.contact_desc")}
+        </PageTitle>
 
-    <form
-      ref={form}
-      onSubmit={sendEmail}
-      className="mx-auto w-full mt-12 lg:w-5/12"
-    >
-      <div className="mb-8 flex flex-col gap-6 md:flex-row">
-        <Input
-          name="name"
-          variant="outlined"
-          size="lg"
-          label={t("home.form_name")}
-          required
-        />
-        <Input
-          name="email"
-          type="email"
-          variant="outlined"
-          size="lg"
-          label={t("home.form_email")}
-          required
-        />
-      </div>
-      <Input
-        name="title"
-        variant="outlined"
-        size="lg"
-        label={t("home.form_subject")}
-        className="mb-6"
-        required
-      />
-      <Textarea
-        name="message"
-        variant="outlined"
-        size="lg"
-        label={t("home.form_message")}
-        rows={8}
-        required
-      />
-      <Checkbox
-        required
-        
-        label={
-          <Typography
-            variant="small"
-            color="gray"
-            className="flex items-center font-normal"
-            
-          >
-            {t("home.form_terms")} &nbsp;
-            <a
-              href="#"
-              className="font-medium transition-colors hover:text-gray-900"
-            >
-              Terms and Conditions
-            </a>
-          </Typography>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="mx-auto w-full mt-12 lg:w-5/12"
+        >
+          <div className="mb-8 flex flex-col gap-6 md:flex-row">
+            <Input
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              variant="outlined"
+              size="lg"
+              label={t("home.form_name")}
+              required
+            />
+            <Input
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+              variant="outlined"
+              size="lg"
+              label={t("home.form_email")}
+              required
+            />
+          </div>
+
+          <Input
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+            variant="outlined"
+            size="lg"
+            label={t("home.form_subject")}
+            required
+          />
+
           
-        }
-        containerProps={{ className: "-ml-2.5" }}
-      />
-      <Button
-        type="submit"
-        variant="gradient"
-        size="lg"
-        className="mt-8"
-        fullWidth
-      >
-        {t("home.form_button")}
-      </Button>
-    </form>
-  </div>
-</section>
+          <div className="mb-8">
+            <Textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              variant="outlined"
+              size="lg"
+             placeholder="Message"
+              rows={8}
+              required
+              className="mt-8"
+            />
+          </div>
+
+          <Checkbox
+            name="terms"
+            checked={formData.terms}
+            onChange={handleChange}
+            required
+            label={
+              <Typography
+                variant="small"
+                color="gray"
+                className="flex items-center font-normal"
+              >
+                {t("home.form_terms")}&nbsp;
+                <a
+                  href="#"
+                  className="font-medium transition-colors hover:text-gray-900"
+                >
+                  Terms and Conditions
+                </a>
+              </Typography>
+            }
+            containerProps={{ className: "-ml-2.5" }}
+          />
+
+          <Button
+  type="submit"
+  variant="gradient"
+  size="lg"
+  fullWidth
+  disabled={isSending}
+  className={`mt-8 transition-all duration-300 ${
+    isSending ? "opacity-50 cursor-not-allowed" : ""
+  }`}
+>
+  {t("home.form_button")}
+</Button>
+
+        </form>
+
+        
+        <Dialog open={openModal} handler={() => setOpenModal(false)}>
+          <DialogHeader>Başarılı</DialogHeader>
+          <DialogBody>
+            Mesajınız başarıyla gönderildi. Teşekkür ederiz!
+          </DialogBody>
+          <DialogFooter>
+            <Button
+              variant="gradient"
+              onClick={() => setOpenModal(false)}
+            >
+              Kapat
+            </Button>
+          </DialogFooter>
+        </Dialog>
+      </div>
+    </section>
 
     </>
   );
 }
+
 
 export default Home;
