@@ -7,7 +7,7 @@ export function ETrade() {
 
   return (
     <>
-      <div className="relative flex min-h-[90vh] items-center justify-center">
+      <div className="relative flex min-h-[90vh] items-center justify-center  pt-32">
         <div className="absolute top-0 h-full w-full bg-[url('/img/3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
